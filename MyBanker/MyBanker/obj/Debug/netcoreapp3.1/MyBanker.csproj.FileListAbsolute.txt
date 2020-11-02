@@ -1,0 +1,12 @@
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\bin\Debug\netcoreapp3.1\MyBanker.exe
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\bin\Debug\netcoreapp3.1\MyBanker.deps.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\bin\Debug\netcoreapp3.1\MyBanker.runtimeconfig.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\bin\Debug\netcoreapp3.1\MyBanker.runtimeconfig.dev.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\bin\Debug\netcoreapp3.1\MyBanker.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\bin\Debug\netcoreapp3.1\MyBanker.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\obj\Debug\netcoreapp3.1\MyBanker.AssemblyInfoInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\obj\Debug\netcoreapp3.1\MyBanker.AssemblyInfo.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\obj\Debug\netcoreapp3.1\MyBanker.csproj.CoreCompileInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\obj\Debug\netcoreapp3.1\MyBanker.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\obj\Debug\netcoreapp3.1\MyBanker.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\obj\Debug\netcoreapp3.1\MyBanker.genruntimeconfig.cache
