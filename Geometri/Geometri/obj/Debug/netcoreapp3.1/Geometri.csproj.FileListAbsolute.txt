@@ -1,0 +1,13 @@
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Geometri\Geometri\bin\Debug\netcoreapp3.1\Geometri.exe
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Geometri\Geometri\bin\Debug\netcoreapp3.1\Geometri.deps.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Geometri\Geometri\bin\Debug\netcoreapp3.1\Geometri.runtimeconfig.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Geometri\Geometri\bin\Debug\netcoreapp3.1\Geometri.runtimeconfig.dev.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Geometri\Geometri\bin\Debug\netcoreapp3.1\Geometri.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Geometri\Geometri\bin\Debug\netcoreapp3.1\Geometri.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Geometri\Geometri\obj\Debug\netcoreapp3.1\Geometri.csprojAssemblyReference.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Geometri\Geometri\obj\Debug\netcoreapp3.1\Geometri.AssemblyInfoInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Geometri\Geometri\obj\Debug\netcoreapp3.1\Geometri.AssemblyInfo.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Geometri\Geometri\obj\Debug\netcoreapp3.1\Geometri.csproj.CoreCompileInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Geometri\Geometri\obj\Debug\netcoreapp3.1\Geometri.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Geometri\Geometri\obj\Debug\netcoreapp3.1\Geometri.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Geometri\Geometri\obj\Debug\netcoreapp3.1\Geometri.genruntimeconfig.cache
