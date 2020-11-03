@@ -10,3 +10,4 @@ C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\obj\Debug\netco
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\obj\Debug\netcoreapp3.1\MyBanker.dll
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\obj\Debug\netcoreapp3.1\MyBanker.pdb
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\obj\Debug\netcoreapp3.1\MyBanker.genruntimeconfig.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\MyBanker\MyBanker\obj\Debug\netcoreapp3.1\MyBanker.csprojAssemblyReference.cache
