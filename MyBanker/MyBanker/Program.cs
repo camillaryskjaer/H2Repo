@@ -10,7 +10,7 @@ namespace MyBanker
         {
             CardGenerator generator = new CardGenerator();
             Card card;
-
+            
             string response = "1";
             while (response == "1")
             {
