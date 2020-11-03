@@ -6,21 +6,25 @@ namespace MyBanker
 {
     public class Customer
     {
+        // properties
         private string _name;
         private int _age;
 
+        // constructor for customer class
         public Customer(string Name, int Age)
         {
             _name = Name;
             _age = Age;
         }
 
+        // method to get the age
         public int Age
         {
             get { return _age; }
-            set { _age = value; }
+            private set { _age = value; }
         }
 
+        // method to get the name
         public string Name
         {
             get { return _name; }

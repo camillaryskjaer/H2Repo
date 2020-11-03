@@ -6,5 +6,6 @@ namespace MyBanker.Interfaces
 {
     interface INetUsable
     {
+        // empty interface for checkup, if card is allowed to be used online
     }
 }
