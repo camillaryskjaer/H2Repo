@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\MyBanker\\MyBanker\\MyBanker.csproj": {}
+    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\MyBanker\\MyBanker\\MyBanker.csproj": {
+    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\MyBanker\\MyBanker\\MyBanker.csproj",
-        "projectName": "MyBanker",
-        "projectPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\MyBanker\\MyBanker\\MyBanker.csproj",
+        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen.csproj",
+        "projectName": "Kaffemaskinen",
+        "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen.csproj",
         "packagesPath": "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\MyBanker\\MyBanker\\obj\\",
+        "outputPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
