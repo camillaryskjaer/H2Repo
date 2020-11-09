@@ -6,7 +6,11 @@ namespace HelpJakob
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Message m = new Message("", "", "", "", "");
+            Send s = new Send();
+            s.sendMessage(MessageCarrier.Smtp, m, true);
+
+            Console.ReadLine();
         }
     }
 }
