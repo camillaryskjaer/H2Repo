@@ -1,6 +1,7 @@
 ﻿using Kaffemaskinen.ErrorMsg;
 using Kaffemaskinen.Machines;
 using Kaffemaskinen.Machines.Accessories;
+using Kaffemaskinen.Powders;
 using System;
 using System.Threading;
 
@@ -139,9 +140,21 @@ namespace Kaffemaskinen
                                 Thread.Sleep(1000);
                                 break;
                             case 5:
-                                Console.Clear();
-                                Console.WriteLine("Enter content you want to add to the filter");
-                                holder.Filter.AddContent(Console.ReadLine());
+                                Console.WriteLine("Press 1 for coffee");
+                                Console.WriteLine("Press 2 for tea");
+                                switch (int.Parse(Console.ReadLine()))
+                                {
+                                    case 1:
+                                        Console.Clear();
+                                        holder.Filter.AddContent(new Coffee("Gevalia"));
+                                        break;
+                                    case 2:
+                                        Console.Clear();
+                                        holder.Filter.AddContent(new Tea("Strawberry"));
+                                        break;
+                                    default:
+                                        break;
+                                }
                                 break;
                             case 6:
                                 holder.RemoveFilter();

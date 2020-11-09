@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kaffemaskinen.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,7 +10,7 @@ namespace Kaffemaskinen.Machines.Accessories
         // tells the size of the filter
         private double _size;
 
-        public string Content { get; private set; }
+        public IPowder Content { get; private set; }
 
         // constructor for the filter
         public Filter(double Size)
@@ -18,7 +19,7 @@ namespace Kaffemaskinen.Machines.Accessories
         }
 
         // method to add coffee beans to the filter
-        public void AddContent(string content)
+        public void AddContent(IPowder content)
         {
             Content = content;
         }
@@ -31,7 +32,7 @@ namespace Kaffemaskinen.Machines.Accessories
         // method to check if there is ceffee beens in the filter
         public string CheckForContent()
         {
-            return Content;
+            return Content.GetName();
         }
     }
 }

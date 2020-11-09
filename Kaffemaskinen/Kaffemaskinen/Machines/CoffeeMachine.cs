@@ -91,11 +91,11 @@ namespace Kaffemaskinen.Machines
         {
             if (this.filterHolder.Filter != null)
             {
-                Pot.AddContent(_waterAmount, filterHolder.Filter.Content);
+                Pot.AddContent(_waterAmount, filterHolder.Filter.Content.GetName());
             }
             else if (this.filterHolder.Filter == null)
             {
-                Pot.AddContent(_waterAmount, filterHolder.Filter.Content + " ground");
+                Pot.AddContent(_waterAmount, filterHolder.Filter.Content.GetName() + " ground");
             }
             else
             {
