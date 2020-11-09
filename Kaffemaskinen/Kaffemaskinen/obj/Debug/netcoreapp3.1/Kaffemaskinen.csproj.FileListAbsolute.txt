@@ -1,0 +1,13 @@
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Kaffemaskinen\Kaffemaskinen\bin\Debug\netcoreapp3.1\Kaffemaskinen.exe
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Kaffemaskinen\Kaffemaskinen\bin\Debug\netcoreapp3.1\Kaffemaskinen.deps.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Kaffemaskinen\Kaffemaskinen\bin\Debug\netcoreapp3.1\Kaffemaskinen.runtimeconfig.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Kaffemaskinen\Kaffemaskinen\bin\Debug\netcoreapp3.1\Kaffemaskinen.runtimeconfig.dev.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Kaffemaskinen\Kaffemaskinen\bin\Debug\netcoreapp3.1\Kaffemaskinen.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Kaffemaskinen\Kaffemaskinen\bin\Debug\netcoreapp3.1\Kaffemaskinen.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Kaffemaskinen\Kaffemaskinen\obj\Debug\netcoreapp3.1\Kaffemaskinen.csprojAssemblyReference.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Kaffemaskinen\Kaffemaskinen\obj\Debug\netcoreapp3.1\Kaffemaskinen.AssemblyInfoInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Kaffemaskinen\Kaffemaskinen\obj\Debug\netcoreapp3.1\Kaffemaskinen.AssemblyInfo.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Kaffemaskinen\Kaffemaskinen\obj\Debug\netcoreapp3.1\Kaffemaskinen.csproj.CoreCompileInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Kaffemaskinen\Kaffemaskinen\obj\Debug\netcoreapp3.1\Kaffemaskinen.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Kaffemaskinen\Kaffemaskinen\obj\Debug\netcoreapp3.1\Kaffemaskinen.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Kaffemaskinen\Kaffemaskinen\obj\Debug\netcoreapp3.1\Kaffemaskinen.genruntimeconfig.cache
