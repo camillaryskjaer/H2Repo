@@ -146,11 +146,13 @@ namespace Kaffemaskinen
                                 {
                                     case 1:
                                         Console.Clear();
-                                        holder.Filter.AddContent(new Coffee("Gevalia"));
+                                        Console.WriteLine("Enter coffee brand");
+                                        holder.Filter.AddContent(new Coffee(Console.ReadLine()));
                                         break;
                                     case 2:
                                         Console.Clear();
-                                        holder.Filter.AddContent(new Tea("Strawberry"));
+                                        Console.WriteLine("Enter tea type");
+                                        holder.Filter.AddContent(new Tea(Console.ReadLine()));
                                         break;
                                     default:
                                         break;
