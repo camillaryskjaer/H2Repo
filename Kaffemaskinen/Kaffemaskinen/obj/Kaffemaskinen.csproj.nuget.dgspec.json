@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen.csproj": {}
+    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen.csproj": {
+    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen.csproj",
+        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen.csproj",
         "projectName": "Kaffemaskinen",
-        "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen.csproj",
+        "projectPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\Kaffemaskinen.csproj",
         "packagesPath": "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\obj\\",
+        "outputPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Kaffemaskinen\\Kaffemaskinen\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

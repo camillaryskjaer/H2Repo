@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\HjælpJakob\\HelpJakob",
-    "\\HjælpJakob\\HelpJakob\\HelpJakob",
-    "\\Kaffemaskinen",
+    "\\BirdsFlyingAroundApp\\BirdsFlyingAroundApp\\Birds",
     "\\Kaffemaskinen\\Kaffemaskinen",
     "\\Kaffemaskinen\\Kaffemaskinen\\Machines"
   ],
-  "SelectedNode": "\\Kaffemaskinen\\Kaffemaskinen\\Machines\\CoffeeMachine.cs",
+  "SelectedNode": "\\BirdsFlyingAroundApp",
   "PreviewInSolutionExplorer": false
 }
