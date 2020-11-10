@@ -1,5 +1,6 @@
 ﻿using Kaffemaskinen.Interfaces;
 using Kaffemaskinen.Machines.Accessories;
+using Kaffemaskinen.Strength;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,6 +21,8 @@ namespace Kaffemaskinen.Machines
 
         // holder for the filter
         public FilterHolder filterHolder;
+
+        CalculateStrength calculate = new CalculateStrength();
 
         // constructor for a coffee machine
         public CoffeeMachine(string Name) : base(Name)
@@ -91,11 +94,11 @@ namespace Kaffemaskinen.Machines
         {
             if (this.filterHolder.Filter != null)
             {
-                Pot.AddContent(_waterAmount, filterHolder.Filter.Content.GetName());
+                Pot.AddContent(_waterAmount, filterHolder.Filter.Content.GetName() + " " + calculate.CalculateBrewStrength(_waterAmount));
             }
             else if (this.filterHolder.Filter == null)
             {
-                Pot.AddContent(_waterAmount, filterHolder.Filter.Content.GetName() + " ground");
+                Pot.AddContent(_waterAmount, filterHolder.Filter.Content.GetName() + " ground" + " " + calculate.CalculateBrewStrength(_waterAmount));
             }
             else
             {

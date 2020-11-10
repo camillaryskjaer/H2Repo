@@ -89,7 +89,7 @@ namespace Kaffemaskinen
                             case 4:
                                 Console.Clear();
                                 Console.WriteLine("You got {0} cup {1}", pot.PourContent(1), pot.Content);
-                                Thread.Sleep(1000);
+                                Thread.Sleep(5000);
                                 break;
                             case 5:
                                 Console.Clear();
