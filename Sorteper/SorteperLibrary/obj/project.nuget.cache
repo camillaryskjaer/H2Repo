@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "eIv99hrFGbU2MR3/dTNimq6TI9wLp5tXLshVt0imjFZoDMrYnr6N/pfwL+Ez5835utyPEHy0AS5rEN22w6FpqA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Sorteper\\SorteperLibrary\\SorteperLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
