@@ -1,0 +1,13 @@
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Wenside\Wenside\obj\Debug\netcoreapp3.1\Wenside.csprojAssemblyReference.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Wenside\Wenside\obj\Debug\netcoreapp3.1\Wenside.AssemblyInfoInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Wenside\Wenside\obj\Debug\netcoreapp3.1\Wenside.AssemblyInfo.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Wenside\Wenside\obj\Debug\netcoreapp3.1\Wenside.csproj.CoreCompileInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Wenside\Wenside\bin\Debug\netcoreapp3.1\Wenside.exe
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Wenside\Wenside\bin\Debug\netcoreapp3.1\Wenside.deps.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Wenside\Wenside\bin\Debug\netcoreapp3.1\Wenside.runtimeconfig.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Wenside\Wenside\bin\Debug\netcoreapp3.1\Wenside.runtimeconfig.dev.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Wenside\Wenside\bin\Debug\netcoreapp3.1\Wenside.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Wenside\Wenside\bin\Debug\netcoreapp3.1\Wenside.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Wenside\Wenside\obj\Debug\netcoreapp3.1\Wenside.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Wenside\Wenside\obj\Debug\netcoreapp3.1\Wenside.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Wenside\Wenside\obj\Debug\netcoreapp3.1\Wenside.genruntimeconfig.cache
