@@ -1,0 +1,9 @@
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\SorteperLibrary\obj\Debug\netstandard2.0\SorteperLibrary.csprojAssemblyReference.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\SorteperLibrary\obj\Debug\netstandard2.0\SorteperLibrary.AssemblyInfoInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\SorteperLibrary\obj\Debug\netstandard2.0\SorteperLibrary.AssemblyInfo.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\SorteperLibrary\obj\Debug\netstandard2.0\SorteperLibrary.csproj.CoreCompileInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\SorteperLibrary\bin\Debug\netstandard2.0\SorteperLibrary.deps.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\SorteperLibrary\bin\Debug\netstandard2.0\SorteperLibrary.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\SorteperLibrary\bin\Debug\netstandard2.0\SorteperLibrary.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\SorteperLibrary\obj\Debug\netstandard2.0\SorteperLibrary.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\SorteperLibrary\obj\Debug\netstandard2.0\SorteperLibrary.pdb

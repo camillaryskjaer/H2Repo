@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "SorteperLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/SorteperLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SorteperLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SorteperLibrary/1.0.0": {
+      "type": "project",
+      "path": "../SorteperLibrary/SorteperLibrary.csproj",
+      "msbuildProject": "../SorteperLibrary/SorteperLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "SorteperLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\": {},
@@ -37,7 +56,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Sorteper\\SorteperLibrary\\SorteperLibrary.csproj": {
+              "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Sorteper\\SorteperLibrary\\SorteperLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

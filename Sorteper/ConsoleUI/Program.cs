@@ -1,4 +1,7 @@
-﻿using System;
+﻿using SorteperLibrary.Cards.Interfaces;
+using SorteperLibrary.Generators;
+using System;
+using System.Collections.Generic;
 
 namespace ConsoleUI
 {
@@ -6,7 +9,15 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<ICard> cards;
+            CardGenerator generator = new CardGenerator();
+            cards = generator.GenerateCards();
+
+            foreach (ICard card in cards)
+            {
+                Console.WriteLine(card.GetSuit() + " : " + card.GetValue());
+            }
+            Console.ReadLine();
         }
     }
 }
