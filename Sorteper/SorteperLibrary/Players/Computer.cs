@@ -10,12 +10,8 @@ namespace SorteperLibrary.Players
     /// Class to simulate a computer player.
     /// Not implemented!
     /// </summary>
-    class Computer : IPlayer
+    class Computer : Player, IPlayer
     {
-        private int _playerNumber;
-        private string _playerName;
-        private List<ICard> _cards;
-
         public Computer(int number)
         {
             _playerName = "Computer";
@@ -26,7 +22,17 @@ namespace SorteperLibrary.Players
             throw new NotImplementedException();
         }
 
-        public int GetCards()
+        public void AddCards(List<ICard> cards)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int GetCardAmount()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<ICard> GetCards()
         {
             throw new NotImplementedException();
         }

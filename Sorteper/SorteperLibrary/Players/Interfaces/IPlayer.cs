@@ -12,8 +12,10 @@ namespace SorteperLibrary.Players.Interfaces
     {
         int GetNumber();
         string GetName();
-        int GetCards();
+        int GetCardAmount();
+        List<ICard> GetCards();
         void AddCard(ICard card);
+        void AddCards(List<ICard> cards);
         ICard RemoveCard(int index);
     }
 }

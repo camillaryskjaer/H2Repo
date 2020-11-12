@@ -23,10 +23,6 @@ namespace SorteperLibrary.Generators
                     case 1:
                         for (int s = 1; s < 14; s++)
                         {
-                            if (s == 11)
-                            {
-                                continue;
-                            }
                             ICard card = new Card("Hearts", s);
                             _cards.Add(card);
                         }
@@ -34,10 +30,6 @@ namespace SorteperLibrary.Generators
                     case 2:
                         for (int s = 1; s < 14; s++)
                         {
-                            if (s == 11)
-                            {
-                                continue;
-                            }
                             ICard card = new Card("Diamonds", s);
                             _cards.Add(card);
                         }

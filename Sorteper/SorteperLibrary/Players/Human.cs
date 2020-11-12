@@ -9,17 +9,14 @@ namespace SorteperLibrary.Players
     /// <summary>
     /// Class for human players.
     /// </summary>
-    public abstract class Human : IPlayer
+    public class Human : Player, IPlayer
     {
-        private int _playerNumber;
-        private string _playerName;
-        private List<ICard> _cards;
-
         // Constructor for a human player
-        public Human(string name, int number)
+        public Human(string name, int number, List<ICard> cards)
         {
             _playerName = name;
             _playerNumber = number;
+            _cards = cards;
         }
 
         // Method to add a card to the player
@@ -28,10 +25,20 @@ namespace SorteperLibrary.Players
             _cards.Add(card);
         }
 
+        public void AddCards(List<ICard> cards)
+        {
+            _cards = cards;
+        }
+
         // Method to return the number off cards a player have
-        public int GetCards()
+        public int GetCardAmount()
         {
             return _cards.Count;
+        }
+
+        public List<ICard> GetCards()
+        {
+            return _cards;
         }
 
         // Method to get the players name

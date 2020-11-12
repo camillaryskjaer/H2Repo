@@ -1,7 +1,12 @@
-﻿using SorteperLibrary.Cards.Interfaces;
+﻿using SorteperLibrary;
+using SorteperLibrary.Cards.Interfaces;
 using SorteperLibrary.Generators;
+using SorteperLibrary.Players;
+using SorteperLibrary.Players.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
+using System.Net.NetworkInformation;
 
 namespace ConsoleUI
 {
@@ -9,14 +14,19 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            List<ICard> cards;
-            CardGenerator generator = new CardGenerator();
-            cards = generator.GenerateCards();
+            GameManager manager = new GameManager();
 
-            foreach (ICard card in cards)
+            Console.WriteLine("Enter number of players");
+            for (int i = 0; i < int.Parse(Console.ReadLine()); i++)
             {
-                Console.WriteLine(card.GetSuit() + " : " + card.GetValue());
+                Console.Clear();
+                Console.WriteLine("Write name of player");
+                manager.CreatePlayer(Console.ReadLine());
             }
+            manager.DealCards();
+
+
+
             Console.ReadLine();
         }
     }
