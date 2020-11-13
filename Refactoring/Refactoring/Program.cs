@@ -13,41 +13,43 @@ namespace Refactoring
         private static NetworkManager networkManager = new NetworkManager();
         static void Main()
         {
-            Console.WriteLine(networkManager.IpFromHostname("en.wikipedia.org"));
-            Console.WriteLine(networkManager.LocalPing());
+            Console.WriteLine("Enter hostname / website \n");
+            Console.WriteLine(networkManager.IpFromHostname(Console.ReadLine()) + Environment.NewLine);
 
-            string t = networkManager.HostnameFromIp("8.8.8.8");
+            Console.WriteLine("Pinging local machine\n");
+            Console.WriteLine(networkManager.LocalPing() + Environment.NewLine);
+
+            Console.WriteLine("Enter Ipaddress\n");
+            string t = networkManager.HostnameFromIp(Console.ReadLine());
             Console.WriteLine(t);
-            Console.WriteLine("Wee " + networkManager.IpFromHostname(t));
+            Console.WriteLine("Wee " + networkManager.IpFromHostname(t) + Environment.NewLine);
 
-            Console.WriteLine("route*** " + networkManager.Traceroute("8.8.8.8"));
+            Console.WriteLine("Enter Ipaddress to trace\n");
+            Console.WriteLine("route*** " + networkManager.Traceroute(Console.ReadLine()) + Environment.NewLine);
 
-            Console.WriteLine(networkManager.DisplayDHCPServerAddresses());
+            Console.WriteLine("Displaying connected DHCP server addresses\n");
+            Console.WriteLine(networkManager.DisplayDHCPServerAddresses() + Environment.NewLine);
 
-
-
-            //Console.ReadKey();
-            ////WIN-M69SG2Q0732.test.local
-            ////ZBC-RG01203MKC
-            //string hostName = "ZBC-RG01203MKC";
-            //IPHostEntry hostInfo = Dns.GetHostByName(hostName);
+            Console.WriteLine("Local machine ip's: \n");
+            string hostName = Environment.MachineName;
+            IPHostEntry hostInfo = Dns.GetHostByName(hostName);
             //// Get the IP address list that resolves to the host names contained in the 
             //// Alias property.
-            //IPAddress[] address = hostInfo.AddressList;
+            IPAddress[] address = hostInfo.AddressList;
             //// Get the alias names of the addresses in the IP address list.
-            //String[] alias = hostInfo.Aliases;
+            String[] alias = hostInfo.Aliases;
 
-            //Console.WriteLine("Host name : " + hostInfo.HostName);
-            //Console.WriteLine("\nAliases : ");
-            //for (int index = 0; index < alias.Length; index++)
-            //{
-            //    Console.WriteLine(alias[index]);
-            //}
-            //Console.WriteLine("\nIP address list : ");
-            //for (int index = 0; index < address.Length; index++)
-            //{
-            //    Console.WriteLine(address[index]);
-            //}
+            Console.WriteLine("Host name : " + hostInfo.HostName);
+            Console.WriteLine("\nAliases : ");
+            for (int index = 0; index < alias.Length; index++)
+            {
+                Console.WriteLine(alias[index]);
+            }
+            Console.WriteLine("\nIP address list : ");
+            for (int index = 0; index < address.Length; index++)
+            {
+                Console.WriteLine(address[index]);
+            }
             Console.ReadKey();
         }
     }
