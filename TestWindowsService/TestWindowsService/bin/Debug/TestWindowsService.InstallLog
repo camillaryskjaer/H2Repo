@@ -1,0 +1,79 @@
+﻿Installerer assemblyen 'C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe'.
+De berørte parametre er:
+   logtoconsole = 
+   logfile = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog
+   assemblypath = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe
+Annullerer opdatering af assemblyen 'C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe'.
+De berørte parametre er:
+   logtoconsole = 
+   logfile = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog
+   assemblypath = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe
+Der opstod en undtagelse under tilbagerulningsfasen i installationsprogrammet System.ServiceProcess.ServiceProcessInstaller.
+System.NullReferenceException: Objektreferencen er ikke indstillet til en forekomst af et objekt.
+Der opstod en undtagelse under tilbagerulningsfasen af installationen. Undtagelsen bliver ignoreret, og tilbagerulningen fortsætter. Computeren vender dog muligvis ikke tilbage til sin helt oprindelige tilstand, når tilbagerulningen er fuldført.
+Installerer assemblyen 'C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe'.
+De berørte parametre er:
+   logtoconsole = 
+   logfile = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog
+   assemblypath = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe
+Annullerer opdatering af assemblyen 'C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe'.
+De berørte parametre er:
+   logtoconsole = 
+   logfile = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog
+   assemblypath = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe
+Der opstod en undtagelse under tilbagerulningsfasen i installationsprogrammet System.ServiceProcess.ServiceProcessInstaller.
+System.NullReferenceException: Objektreferencen er ikke indstillet til en forekomst af et objekt.
+Der opstod en undtagelse under tilbagerulningsfasen af installationen. Undtagelsen bliver ignoreret, og tilbagerulningen fortsætter. Computeren vender dog muligvis ikke tilbage til sin helt oprindelige tilstand, når tilbagerulningen er fuldført.
+Installerer assemblyen 'C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe'.
+De berørte parametre er:
+   logtoconsole = 
+   logfile = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog
+   assemblypath = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe
+Installerer tjenesten TestWindowsService...
+Opretter EventLog-kilden TestWindowsService i logfilen Application...
+Annullerer opdatering af assemblyen 'C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe'.
+De berørte parametre er:
+   logtoconsole = 
+   logfile = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog
+   assemblypath = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe
+Gendanner hændelsesloggen til den foregående tilstand for kilden TestWindowsService.
+Der opstod en undtagelse under tilbagerulningsfasen i installationsprogrammet System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Kilden blev ikke fundet, men der kunne ikke søges i nogle eller alle hændelseslogfiler. Logfiler, der ikke er tilgængelige: Security, State.
+Der opstod en undtagelse under tilbagerulningsfasen af installationen. Undtagelsen bliver ignoreret, og tilbagerulningen fortsætter. Computeren vender dog muligvis ikke tilbage til sin helt oprindelige tilstand, når tilbagerulningen er fuldført.
+Installerer assemblyen 'C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe'.
+De berørte parametre er:
+   logtoconsole = 
+   logfile = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog
+   assemblypath = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe
+Installerer tjenesten TestWindowsService...
+Opretter EventLog-kilden TestWindowsService i logfilen Application...
+Annullerer opdatering af assemblyen 'C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe'.
+De berørte parametre er:
+   logtoconsole = 
+   logfile = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog
+   assemblypath = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe
+Gendanner hændelsesloggen til den foregående tilstand for kilden TestWindowsService.
+Der opstod en undtagelse under tilbagerulningsfasen i installationsprogrammet System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Kilden blev ikke fundet, men der kunne ikke søges i nogle eller alle hændelseslogfiler. Logfiler, der ikke er tilgængelige: Security, State.
+Der opstod en undtagelse under tilbagerulningsfasen af installationen. Undtagelsen bliver ignoreret, og tilbagerulningen fortsætter. Computeren vender dog muligvis ikke tilbage til sin helt oprindelige tilstand, når tilbagerulningen er fuldført.
+Installerer assemblyen 'C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe'.
+De berørte parametre er:
+   logtoconsole = 
+   logfile = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog
+   assemblypath = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe
+Installerer tjenesten TestWindowsService...
+Tjenesten TestWindowsService blev installeret.
+Opretter EventLog-kilden TestWindowsService i logfilen Application...
+Bekræfter assemblyen 'C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe'.
+De berørte parametre er:
+   logtoconsole = 
+   logfile = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog
+   assemblypath = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe
+Afinstallerer assemblyen 'C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe'.
+De berørte parametre er:
+   logtoconsole = 
+   logfile = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog
+   assemblypath = C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe
+Fjerner EventLog-kilden TestWindowsService.
+Tjenesten TestWindowsService bliver fjernet fra systemet...
+Tjenesten TestWindowsService blev fjernet fra systemet.

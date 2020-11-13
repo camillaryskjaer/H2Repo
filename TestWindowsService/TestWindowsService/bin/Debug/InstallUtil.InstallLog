@@ -1,0 +1,89 @@
+﻿
+Kører en overført installation.
+
+Påbegynder installationsfasen af installationen.
+Se indholdet af logfilen med status for assemblyen C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe.
+Filen er placeret på C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog.
+
+Der opstod en undtagelse under installationsfasen.
+System.ComponentModel.Win32Exception: Adgang nægtet
+
+Påbegynder tilbagerulningsfasen af installationen.
+Se indholdet af logfilen med status for assemblyen C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe.
+Filen er placeret på C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog.
+
+Tilbagerulningsfasen er fuldført.
+
+Den overførte installation er fuldført.
+
+Kører en overført installation.
+
+Påbegynder installationsfasen af installationen.
+Se indholdet af logfilen med status for assemblyen C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe.
+Filen er placeret på C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog.
+
+Der opstod en undtagelse under installationsfasen.
+System.ComponentModel.Win32Exception: Adgang nægtet
+
+Påbegynder tilbagerulningsfasen af installationen.
+Se indholdet af logfilen med status for assemblyen C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe.
+Filen er placeret på C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog.
+
+Tilbagerulningsfasen er fuldført.
+
+Den overførte installation er fuldført.
+
+Kører en overført installation.
+
+Påbegynder installationsfasen af installationen.
+Se indholdet af logfilen med status for assemblyen C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe.
+Filen er placeret på C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog.
+
+Der opstod en undtagelse under installationsfasen.
+System.Security.SecurityException: Kilden blev ikke fundet, men der kunne ikke søges i nogle eller alle hændelseslogfiler. Logfiler, der ikke er tilgængelige: Security, State.
+
+Påbegynder tilbagerulningsfasen af installationen.
+Se indholdet af logfilen med status for assemblyen C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe.
+Filen er placeret på C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog.
+
+Tilbagerulningsfasen er fuldført.
+
+Den overførte installation er fuldført.
+
+Kører en overført installation.
+
+Påbegynder installationsfasen af installationen.
+Se indholdet af logfilen med status for assemblyen C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe.
+Filen er placeret på C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog.
+
+Der opstod en undtagelse under installationsfasen.
+System.Security.SecurityException: Kilden blev ikke fundet, men der kunne ikke søges i nogle eller alle hændelseslogfiler. Logfiler, der ikke er tilgængelige: Security, State.
+
+Påbegynder tilbagerulningsfasen af installationen.
+Se indholdet af logfilen med status for assemblyen C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe.
+Filen er placeret på C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog.
+
+Tilbagerulningsfasen er fuldført.
+
+Den overførte installation er fuldført.
+
+Kører en overført installation.
+
+Påbegynder installationsfasen af installationen.
+Se indholdet af logfilen med status for assemblyen C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe.
+Filen er placeret på C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog.
+
+Installationsfasen er fuldført, og bekræftelsesfasen begynder.
+Se indholdet af logfilen med status for assemblyen C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe.
+Filen er placeret på C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog.
+
+Bekræftelsesfasen er fuldført.
+
+Den overførte installation er fuldført.
+
+
+Påbegynder afinstallationen.
+Se indholdet af logfilen med status for assemblyen C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe.
+Filen er placeret på C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.InstallLog.
+
+Afinstallationen er fuldført.

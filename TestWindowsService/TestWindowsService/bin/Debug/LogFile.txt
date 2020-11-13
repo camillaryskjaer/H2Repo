@@ -1,0 +1,2 @@
+13-11-2020 10:48:20: Test windows service started
+13-11-2020 10:48:23: Test windows service stopped

@@ -1,0 +1,10 @@
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe.config
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.exe
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\bin\Debug\TestWindowsService.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\obj\Debug\TestWindowsService.csprojAssemblyReference.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\obj\Debug\TestWindowsService.ProjectInstaller.resources
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\obj\Debug\TestWindowsService.Service1.resources
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\obj\Debug\TestWindowsService.csproj.GenerateResource.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\obj\Debug\TestWindowsService.csproj.CoreCompileInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\obj\Debug\TestWindowsService.exe
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\TestWindowsService\TestWindowsService\obj\Debug\TestWindowsService.pdb
