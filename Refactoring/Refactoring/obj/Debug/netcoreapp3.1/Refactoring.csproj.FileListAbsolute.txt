@@ -1,0 +1,13 @@
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Refactoring\Refactoring\bin\Debug\netcoreapp3.1\Refactoring.exe
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Refactoring\Refactoring\bin\Debug\netcoreapp3.1\Refactoring.deps.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Refactoring\Refactoring\bin\Debug\netcoreapp3.1\Refactoring.runtimeconfig.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Refactoring\Refactoring\bin\Debug\netcoreapp3.1\Refactoring.runtimeconfig.dev.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Refactoring\Refactoring\bin\Debug\netcoreapp3.1\Refactoring.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Refactoring\Refactoring\bin\Debug\netcoreapp3.1\Refactoring.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Refactoring\Refactoring\obj\Debug\netcoreapp3.1\Refactoring.csprojAssemblyReference.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Refactoring\Refactoring\obj\Debug\netcoreapp3.1\Refactoring.AssemblyInfoInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Refactoring\Refactoring\obj\Debug\netcoreapp3.1\Refactoring.AssemblyInfo.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Refactoring\Refactoring\obj\Debug\netcoreapp3.1\Refactoring.csproj.CoreCompileInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Refactoring\Refactoring\obj\Debug\netcoreapp3.1\Refactoring.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Refactoring\Refactoring\obj\Debug\netcoreapp3.1\Refactoring.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Refactoring\Refactoring\obj\Debug\netcoreapp3.1\Refactoring.genruntimeconfig.cache
