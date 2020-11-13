@@ -12,7 +12,7 @@ namespace Refactoring
     /// </summary>
     public class DNS
     {
-        // Method to get ip adress from hostname
+        // Method to get ipadress from hostname
         public string GetIpFromHostname(string Hostname)
         {
             string ip = "";
@@ -48,6 +48,7 @@ namespace Refactoring
             return ip;
         }
 
+        // Method to get hostname from ipaddress
         public string GetHostnameFromIp(string Ip)
         {
             string hostname = "";
@@ -56,6 +57,7 @@ namespace Refactoring
                 IPHostEntry ipHostEntry = Dns.GetHostByAddress(Ip);
                 hostname = ipHostEntry.HostName;
             }
+            // Exception handling
             catch (FormatException)
             {
                 hostname = "Please specify a valid IP address.";
