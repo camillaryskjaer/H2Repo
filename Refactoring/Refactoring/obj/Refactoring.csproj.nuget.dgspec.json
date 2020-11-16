@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Refactoring\\Refactoring\\Refactoring.csproj": {}
+    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Refactoring\\Refactoring\\Refactoring.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Refactoring\\Refactoring\\Refactoring.csproj": {
+    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Refactoring\\Refactoring\\Refactoring.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Refactoring\\Refactoring\\Refactoring.csproj",
+        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Refactoring\\Refactoring\\Refactoring.csproj",
         "projectName": "Refactoring",
-        "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Refactoring\\Refactoring\\Refactoring.csproj",
+        "projectPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Refactoring\\Refactoring\\Refactoring.csproj",
         "packagesPath": "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Refactoring\\Refactoring\\obj\\",
+        "outputPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Refactoring\\Refactoring\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
