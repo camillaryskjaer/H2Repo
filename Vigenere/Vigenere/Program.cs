@@ -1,4 +1,5 @@
 ﻿using System;
+using Vigenere.Managers;
 
 namespace Vigenere
 {
@@ -7,16 +8,20 @@ namespace Vigenere
         static void Main(string[] args)
         {
             Cryptomanager manager = new Cryptomanager();
+            SaveToFile saveToFile = new SaveToFile();
+
             string Code = "test";
 
-
             var salt = manager.GenerateSalt();
-            string message = manager.Encrypt(Console.ReadLine(), Code, salt);
-            string salty = Convert.ToBase64String(salt);
-            Console.WriteLine(salty);
+            string message = manager.Encrypt(Console.ReadLine(), Code, Convert.FromBase64String(salt));
+            Console.WriteLine(salt);
+            Console.WriteLine("-------------------------------------------------------");
+            Console.WriteLine("-------------------------------------------------------");
             Console.WriteLine(message);
 
-            Console.WriteLine(manager.Decrypt(message, Code, Convert.FromBase64String(salty)));
+            saveToFile.SaveToTxt(message + "," + salt);
+
+            Console.WriteLine(manager.Decrypt(message, Code, Convert.FromBase64String(salt)));
             Console.ReadLine();
         }
     }

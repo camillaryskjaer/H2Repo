@@ -8,12 +8,12 @@ namespace Vigenere
 {
     class Cryptomanager
     {
-        public byte[] GenerateSalt()
+        public string GenerateSalt()
         {
             RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
             byte[] buffer = new byte[1024];
             rng.GetBytes(buffer);
-            return buffer;
+            return Convert.ToBase64String(buffer);
         }
 
         public string Encrypt(string Message, string Code, byte[] Salt)
