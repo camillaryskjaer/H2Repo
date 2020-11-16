@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using System.Text;
 using Vigenere.Algorithm;
 
@@ -7,14 +8,21 @@ namespace Vigenere
 {
     class Cryptomanager
     {
-        public string Encrypt(ICrypto Algorithm, string Message, string Code)
+        public byte[] GenerateSalt()
         {
-            return Algorithm.Encrypt(Message, Code, new StringBuilder());
+            RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+            byte[] buffer = new byte[1024];
+            rng.GetBytes(buffer);
+            return buffer;
+        }
+        public string Encrypt(string Message, string Code, byte[] Salt)
+        {
+            return new Rinjdael().Encrypt(Message, Code, Salt);
         }
 
-        public string Decrypt(ICrypto Algorithm, string Message, string Code)
+        public string Decrypt(string Message, string Code, byte[] Salt)
         {
-            return Algorithm.Decrypt(Message, Code, new StringBuilder());
+            return new Rinjdael().Decrypt(Message, Code, Salt);
         }
     }
 }

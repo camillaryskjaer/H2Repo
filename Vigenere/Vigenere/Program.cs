@@ -10,11 +10,14 @@ namespace Vigenere
             string Code = "test";
 
 
-            string message = manager.Encrypt(new Algorithm.Vigenere(), "hej", Code);
+            var salt = manager.GenerateSalt();
+            string message = manager.Encrypt(Console.ReadLine(), Code, salt);
+            string salty = Convert.ToBase64String(salt);
+            Console.WriteLine(salty);
             Console.WriteLine(message);
-            Console.WriteLine(manager.Decrypt(new Algorithm.Vigenere(), message, Code));
-            Console.ReadLine();
 
+            Console.WriteLine(manager.Decrypt(message, Code, Convert.FromBase64String(salty)));
+            Console.ReadLine();
         }
     }
 }

@@ -1,0 +1,20 @@
+﻿<Window x:Class="CryptoUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptoUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Border>
+        <Grid>
+            <StackPanel>
+                <Label FontSize="16" HorizontalAlignment="Center" Margin="0,20,0,0">Plain text</Label>
+                <TextBox x:Name="PlainTextBox" HorizontalAlignment="Center" MinWidth="200" MinHeight="25" Margin="0,10,0,0"></TextBox>
+                <Label FontSize="16" HorizontalAlignment="Center" Margin="0,20,0,0">EncryptedText</Label>
+                <TextBox x:Name="EncryptedTextBox" HorizontalAlignment="Center" MinWidth="200" MinHeight="25" Margin="0,10,0,0"></TextBox>
+                <StackPanel Orientation="Horizontal"></StackPanel>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
