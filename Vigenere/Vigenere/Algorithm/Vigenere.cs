@@ -39,9 +39,8 @@ namespace Vigenere.Algorithm
         int x;
         int y;
 
-        public string Decrypt(string Message, string Code)
+        public string Decrypt(string Message, string Code, StringBuilder builder)
         {
-            StringBuilder builder = new StringBuilder();
             int i = 0;
             char[] message = Message.ToLower().ToCharArray();
             char[] code = Code.ToLower().ToCharArray();
@@ -75,9 +74,8 @@ namespace Vigenere.Algorithm
             return builder.ToString();
         }
 
-        public string Encrypt(string Message, string Code)
+        public string Encrypt(string Message, string Code, StringBuilder builder)
         {
-            StringBuilder builder = new StringBuilder();
             int i = 0;
             char[] message = Message.ToLower().ToCharArray();
             char[] code = Code.ToLower().ToCharArray();

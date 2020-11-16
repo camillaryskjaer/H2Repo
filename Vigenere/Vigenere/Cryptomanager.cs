@@ -9,12 +9,12 @@ namespace Vigenere
     {
         public string Encrypt(ICrypto Algorithm, string Message, string Code)
         {
-            return Algorithm.Encrypt(Message, Code);
+            return Algorithm.Encrypt(Message, Code, new StringBuilder());
         }
 
         public string Decrypt(ICrypto Algorithm, string Message, string Code)
         {
-            return Algorithm.Decrypt(Message, Code);
+            return Algorithm.Decrypt(Message, Code, new StringBuilder());
         }
     }
 }

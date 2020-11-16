@@ -6,7 +6,7 @@ namespace Vigenere.Algorithm
 {
     public interface ICrypto
     {
-        string Encrypt(string Message, string Code);
-        string Decrypt(string Message, string Code);
+        string Encrypt(string Message, string Code, StringBuilder builder);
+        string Decrypt(string Message, string Code, StringBuilder builder);
     }
 }
