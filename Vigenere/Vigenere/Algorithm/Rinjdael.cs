@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Vigenere.Algorithm
 {
-    public class Rinjdael
+    public class Rinjdael : ICrypto
     {
         RijndaelManaged rijndael = new RijndaelManaged();
 

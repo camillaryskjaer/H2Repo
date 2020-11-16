@@ -15,6 +15,7 @@ namespace Vigenere
             rng.GetBytes(buffer);
             return buffer;
         }
+
         public string Encrypt(string Message, string Code, byte[] Salt)
         {
             return new Rinjdael().Encrypt(Message, Code, Salt);
