@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using Vigenere.Managers;
 
 namespace Vigenere
@@ -8,28 +10,54 @@ namespace Vigenere
         static void Main(string[] args)
         {
             Cryptomanager manager = new Cryptomanager();
-            SaveToFile saveToFile = new SaveToFile();
 
-            string Code = "kagemand";
+            string SaltFile = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\Salt.txt";
 
-            var salt = manager.GenerateSalt();
-            string message = manager.Encrypt(Console.ReadLine(), Code, Convert.FromBase64String(salt));
-            string hash = Convert.ToBase64String(manager.GetHash(Convert.FromBase64String(message)));
+            string salt;
+            if (File.Exists(SaltFile))
+            {
+                salt = File.ReadAllText(SaltFile);
+            }
+            else
+            {
+                salt = manager.GenerateSalt();
+            }
+            File.WriteAllText(SaltFile, salt);
 
-            Console.WriteLine("-------------------------------------------------------");
-            Console.WriteLine("-------------------------------------------------------");
-            Console.WriteLine(salt);
-            Console.WriteLine("-------------------------------------------------------");
-            Console.WriteLine("-------------------------------------------------------");
-            Console.WriteLine(message);
-            Console.WriteLine("-------------------------------------------------------");
-            Console.WriteLine("-------------------------------------------------------");
-            Console.WriteLine(hash);
+            List<string> hashes = new List<string>();
+            List<string> newhashes = new List<string>();
 
+            foreach (string file in Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\cryptofolder"))
+            {
+                if (file.Contains(".txtrinj"))
+                {
+                    Console.WriteLine("Storing found hash");
+                    Console.WriteLine("-------------------------");
+                    string hash = File.ReadAllText(file);
+                    hashes.Add(hash);
+                }
+                else
+                {
+                    string filecontent = File.ReadAllText(file);
+                    string encryptedContent = manager.Encrypt(filecontent, "Kode", Convert.FromBase64String(salt));
+                    byte[] encryptedHash = manager.GetHash(Convert.FromBase64String(encryptedContent));
+                    string test = Convert.ToBase64String(encryptedHash);
+                    newhashes.Add(test);
+                    File.WriteAllText(file + "rinj", Convert.ToBase64String(encryptedHash));
+                }
+            }
 
-            saveToFile.SaveToTxt(message + "," + salt + "," + hash);
+            foreach (string h in newhashes)
+            {
+                if (hashes.Contains(h))
+                {
+                    Console.WriteLine("Found matching hash!");
+                    Console.WriteLine("-------------------------------");
+                    Console.WriteLine(h);
+                    Console.WriteLine("-------------------------------");
+                }
+            }
 
-            Console.WriteLine(manager.Decrypt(message, Code, Convert.FromBase64String(salt)));
             Console.ReadLine();
         }
     }
