@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 using Vigenere.Algorithm;
+using Vigenere.Hash;
 
 namespace Vigenere
 {
     class Cryptomanager
     {
+        public byte[] GetHash(byte[] ToBeHashed)
+        {
+            Sha sha = new Sha();
+            return sha.Hashing(ToBeHashed);
+        }
+
         public string GenerateSalt()
         {
             RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();

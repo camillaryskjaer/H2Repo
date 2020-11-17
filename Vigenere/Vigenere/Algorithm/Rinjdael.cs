@@ -14,7 +14,7 @@ namespace Vigenere.Algorithm
         {
             MemoryStream memoryStream = new MemoryStream();
             // derived bytes to make key and vector
-            Rfc2898DeriveBytes rfc = new Rfc2898DeriveBytes(Code, Salt, 50000);
+            Rfc2898DeriveBytes rfc = new Rfc2898DeriveBytes(Code, Salt, 500000);
 
             // key gets set
             rijndael.Key = rfc.GetBytes(32);
@@ -48,7 +48,7 @@ namespace Vigenere.Algorithm
         {
             MemoryStream memoryStream = new MemoryStream();
             // derived bytes to make key and vector
-            Rfc2898DeriveBytes rfc = new Rfc2898DeriveBytes(Code, Salt, 50000);
+            Rfc2898DeriveBytes rfc = new Rfc2898DeriveBytes(Code, Salt, 500000);
 
             // key gets set
             rijndael.Key = rfc.GetBytes(32);
