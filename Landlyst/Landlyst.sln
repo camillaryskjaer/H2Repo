@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Landlyst", "Landlyst\Landlyst.csproj", "{7B989FAE-52B5-4B60-8C5C-8B03E70D170C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B989FAE-52B5-4B60-8C5C-8B03E70D170C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B989FAE-52B5-4B60-8C5C-8B03E70D170C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B989FAE-52B5-4B60-8C5C-8B03E70D170C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B989FAE-52B5-4B60-8C5C-8B03E70D170C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4F60551-A497-420C-80F2-AD20229087F2}
+	EndGlobalSection
+EndGlobal
