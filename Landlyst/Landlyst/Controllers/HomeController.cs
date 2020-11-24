@@ -28,6 +28,16 @@ namespace Landlyst.Controllers
             return View();
         }
 
+        public IActionResult HomePage()
+        {
+            return View();
+        }
+
+        public IActionResult TermsofService()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
