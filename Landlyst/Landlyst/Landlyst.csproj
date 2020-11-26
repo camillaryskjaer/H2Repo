@@ -8,9 +8,4 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Cleaners\" />
-    <Folder Include="Views\Owners\" />
-  </ItemGroup>
-
 </Project>

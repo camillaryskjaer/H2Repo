@@ -8,7 +8,12 @@ namespace Landlyst.Controllers
 {
     public class CleanersController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult TermsofService()
         {
             return View();
         }

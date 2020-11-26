@@ -20,7 +20,7 @@ namespace Landlyst.DataHandling.Managers
             try
             {
                 // creates sqlcommand to get the salt of user logging in
-                SqlCommand command = new SqlCommand();
+                SqlCommand command = sQL.CreateCommand();
                 command.CommandText = @"Select Salt From Users Where Initials=@initials";
                 command.Parameters.AddWithValue("@initials", initials);
 
@@ -37,6 +37,7 @@ namespace Landlyst.DataHandling.Managers
 
                 if (initials == ini)
                 {
+                    // "creates" sqlcommand to get the position of the user loggin in
                     command.Parameters.Clear();
                     command.CommandText = @"Select Position From Users Where Initials=@initials";
                     command.Parameters.AddWithValue("@initials", ini);

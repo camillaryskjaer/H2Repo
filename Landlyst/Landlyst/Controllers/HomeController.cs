@@ -52,14 +52,15 @@ namespace Landlyst.Controllers
         {
             if (HotelManager.ConfirmUser(user.Initials, user.Password))
             {
+                // editt redirect to "homepage" for the group 
                 switch (HotelManager.user.Position)
                 {
                     case 1:
-                        return RedirectToAction("Privacy", "Receptionists");
+                        return RedirectToAction("Privacy", "Owners");
                     case 2:
-                        return Redirect("");
+                        return RedirectToAction("Privacy", "Receptionists");
                     case 3:
-                        return Redirect("");
+                        return RedirectToAction("Privacy", "Cleaners");
                 }
             }
             else

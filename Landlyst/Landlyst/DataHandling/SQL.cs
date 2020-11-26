@@ -46,5 +46,10 @@ namespace Landlyst.DataHandling
             command.ExecuteNonQuery();
             sqlcon.Close();
         }
+
+        public SqlCommand CreateCommand()
+        {
+            return new SqlCommand();
+        }
     }
 }
