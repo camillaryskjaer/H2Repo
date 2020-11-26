@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "3B340luVryJH/6g4/9xiQ+AahRQsW+qBzPDC0/qegWtoyI+CoTsfz0YAUxQpmxo7Sm/RjrhW6mWEe16IpSbVZQ==",
+  "dgSpecHash": "LECh9Bv6xATMQgMetkHZe0AJ7wnCcsW4gobO0mtdhWlU8aASvovwQVrEeJ457iFANZg+ETTriDnLYmzQhBI0yw==",
   "success": true,
   "projectFilePath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Landlyst\\Landlyst\\Landlyst.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512",
+    "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

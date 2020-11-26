@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+@model Landlyst.Models.TempModels.TempLogin
+
+<div style="text-align:center">
+    <h1>
+        Login
+    </h1>
+    <br />
+    <br />
+
+    <div>
+        @using (Html.BeginForm("Login", "Home"))
+        {
+            <h4>Initialer</h4>
+            @Html.TextBoxFor(m => m.Initials);
+            <br />
+            <h4>Password</h4>
+            @Html.PasswordFor(m => m.Password);
+            <br />
+            <br />
+            <button type="submit" id="SubmitBtn">
+                Login
+            </button>
+        }
+    </div>
+
+</div>

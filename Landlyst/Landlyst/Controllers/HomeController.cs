@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Landlyst.Models;
+using Landlyst.Models.TempModels;
+using Landlyst.DataHandling;
 
 namespace Landlyst.Controllers
 {
@@ -35,6 +37,22 @@ namespace Landlyst.Controllers
 
         public IActionResult TermsofService()
         {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(TempLogin user)
+        {
+            string a = user.Password;
+
+            SQL sQL = new SQL();
+            sQL.SqlSelectQuery("");
             return View();
         }
 

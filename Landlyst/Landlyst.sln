@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Landlyst", "Landlyst\Landlyst.csproj", "{7B989FAE-52B5-4B60-8C5C-8B03E70D170C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Landlyst", "Landlyst\Landlyst.csproj", "{7B989FAE-52B5-4B60-8C5C-8B03E70D170C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandlystUsers", "LandlystUsers\LandlystUsers.csproj", "{C01E5279-1C68-4115-8D98-D7112EB79DDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7B989FAE-52B5-4B60-8C5C-8B03E70D170C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B989FAE-52B5-4B60-8C5C-8B03E70D170C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B989FAE-52B5-4B60-8C5C-8B03E70D170C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C01E5279-1C68-4115-8D98-D7112EB79DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C01E5279-1C68-4115-8D98-D7112EB79DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C01E5279-1C68-4115-8D98-D7112EB79DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C01E5279-1C68-4115-8D98-D7112EB79DDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

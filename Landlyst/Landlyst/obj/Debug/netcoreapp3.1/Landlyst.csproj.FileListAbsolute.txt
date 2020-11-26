@@ -12,8 +12,6 @@ C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\bin\Debug\netco
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Landlyst.csprojAssemblyReference.cache
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Landlyst.AssemblyInfoInputs.cache
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Landlyst.AssemblyInfo.cs
-C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Landlyst.csproj.CoreCompileInputs.cache
-C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Landlyst.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Landlyst.RazorAssemblyInfo.cache
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Landlyst.RazorAssemblyInfo.cs
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Landlyst.TagHelpers.input.cache
@@ -37,3 +35,14 @@ C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netco
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Landlyst.csproj.CopyComplete
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Razor\Views\Home\TermsofService.cshtml.g.cs
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ReceptionistLayout.cshtml.g.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Razor\Views\Receptionists\Privacy.cshtml.g.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Razor\Views\Receptionists\TermsofService.cshtml.g.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Landlyst.csproj.CoreCompileInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Landlyst.MvcApplicationPartsAssemblyInfo.cache
