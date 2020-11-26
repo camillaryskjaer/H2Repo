@@ -11,15 +11,14 @@ namespace Landlyst.DataHandling
     {
         // Connection string to local database
         string conn = @"Server=DESKTOP-2D6TKBJ;Database=LandLyst;Trusted_Connection=True;";
-        public DataRowCollection SqlSelectQuery(string SqlQuery)
+        public DataRowCollection SqlSelectCommand(SqlCommand command)
         {
             SqlDataAdapter da = new SqlDataAdapter();
             // Need sql credentials in the sql connection
             var sqlcon = new SqlConnection(conn);
-            SqlCommand cmd = sqlcon.CreateCommand();
-            cmd.CommandText = SqlQuery;
             DataSet ds = new DataSet();
-            da.SelectCommand = cmd;
+            command.Connection = sqlcon;
+            da.SelectCommand = command;
 
             // Opens connection to database, and fills a dataset
             sqlcon.Open();
@@ -30,11 +29,11 @@ namespace Landlyst.DataHandling
             DataRowCollection rows = ds.Tables[0].Rows;
 
             // Used to manually check the incomming data from database(Debugging)
-            foreach (DataRow r in rows)
-            {
-                var id = r[1];
-                var name = r[0];
-            }
+            //foreach (DataRow r in rows)
+            //{
+            //    var id = r[1];
+            //    var name = r[0];
+            //}
 
             return rows;
         }

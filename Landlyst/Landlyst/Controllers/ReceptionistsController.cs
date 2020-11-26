@@ -7,22 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Landlyst.Controllers
 {
-    public class ReceptionistController : Controller
+    public class ReceptionistsController : Controller
     {
-        private TempUser currentUser;
-
-        public TempUser SetUser
-        {
-            set
-            {
-                if (currentUser == null)
-                {
-                    currentUser = value;
-                }
-            }
-        }
-
-
         public IActionResult Privacy()
         {
             return View();

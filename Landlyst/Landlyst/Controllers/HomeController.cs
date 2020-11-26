@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Landlyst.Models;
 using Landlyst.Models.TempModels;
 using Landlyst.DataHandling;
+using Landlyst.DataHandling.Managers;
 
 namespace Landlyst.Controllers
 {
@@ -49,17 +50,28 @@ namespace Landlyst.Controllers
         [HttpPost]
         public IActionResult Login(TempLogin user)
         {
-            string a = user.Password;
-
-            SQL sQL = new SQL();
-            sQL.SqlSelectQuery("");
+            if (HotelManager.ConfirmUser(user.Initials, user.Password))
+            {
+                switch (HotelManager.user.Position)
+                {
+                    case 1:
+                        return RedirectToAction("Privacy", "Receptionists");
+                    case 2:
+                        return Redirect("");
+                    case 3:
+                        return Redirect("");
+                }
+            }
+            else
+            {
+                return View();
+            }
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
     }
 }
