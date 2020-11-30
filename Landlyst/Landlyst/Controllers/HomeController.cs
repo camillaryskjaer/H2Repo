@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Landlyst.Models;
-using Landlyst.Models.TempModels;
 using Landlyst.DataHandling;
 using Landlyst.DataHandling.Managers;
 
@@ -48,7 +47,7 @@ namespace Landlyst.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(TempLogin user)
+        public IActionResult Login(Login user)
         {
             if (HotelManager.ConfirmUser(user.Initials, user.Password))
             {

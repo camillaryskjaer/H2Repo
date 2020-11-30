@@ -10,21 +10,24 @@
 </head>
 
 <body>
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="HomePage">Landlyst</a>
+                <a class="navbar-brand" asp-area="" asp-controller="ReceptionistController" asp-action="HomePage">Landlyst</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
+
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -33,7 +36,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - Landlyst - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy - </a><a asp-area="" asp-controller="Home" asp-action="TermsofService">ToS</a>
+            &copy; 2020 - Landlyst - <a asp-area="" asp-controller="OwnersController" asp-action="Privacy">Privacy - </a><a asp-area="" asp-controller="OwnersController" asp-action="TermsofService">ToS</a>
         </div>
     </footer>
 

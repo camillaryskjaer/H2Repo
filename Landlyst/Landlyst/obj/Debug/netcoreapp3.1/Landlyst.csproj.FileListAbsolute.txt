@@ -46,3 +46,9 @@ C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\bin\Debug\netco
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Landlyst.csproj.CoreCompileInputs.cache
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Landlyst.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Razor\Views\Cleaners\Privacy.cshtml.g.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Razor\Views\Cleaners\TermsofService.cshtml.g.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Razor\Views\Owners\Privacy.cshtml.g.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Razor\Views\Owners\TermsofService.cshtml.g.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CleanersLayout.cshtml.g.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Landlyst\Landlyst\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_OwnersLayout.cshtml.g.cs

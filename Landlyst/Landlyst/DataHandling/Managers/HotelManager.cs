@@ -11,7 +11,7 @@ namespace Landlyst.DataHandling.Managers
     public static class HotelManager
     {
         static SQL sQL = new SQL();
-        static public TempUser user;
+        static public User user;
         static Rinjdael rinjdael = new Rinjdael();
         static Sha256 sha = new Sha256();
 
@@ -45,7 +45,7 @@ namespace Landlyst.DataHandling.Managers
                     row = sQL.SqlSelectCommand(command)[0];
                     int pos = int.Parse(row[0].ToString());
 
-                    user = new TempUser(ini, pos);
+                    user = new User(ini, pos);
 
                     return true;
                 }
