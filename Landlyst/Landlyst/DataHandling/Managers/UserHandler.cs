@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Landlyst.DataHandling.Managers
 {
-    public class TempUserHandler
+    public class UserHandler
     {
         private User User;
 
-        public TempUserHandler(User user)
+        public UserHandler(User user)
         {
             User = user;
         }

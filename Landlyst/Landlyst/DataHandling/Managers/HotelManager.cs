@@ -11,7 +11,7 @@ namespace Landlyst.DataHandling.Managers
     public class HotelManager
     {
         private static HotelManager instance;
-        private TempUserHandler userHandler;
+        private UserHandler userHandler;
         private HotelManager() { }
 
         public static HotelManager Instance
@@ -60,7 +60,7 @@ namespace Landlyst.DataHandling.Managers
                     row = sQL.SqlSelectCommand(command)[0];
                     int pos = int.Parse(row[0].ToString());
 
-                    userHandler = new TempUserHandler(new User(ini, pos));
+                    userHandler = new UserHandler(new User(ini, pos));
 
                     return true;
                 }
