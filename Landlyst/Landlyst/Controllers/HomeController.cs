@@ -49,10 +49,10 @@ namespace Landlyst.Controllers
         [HttpPost]
         public IActionResult Login(Login user)
         {
-            if (HotelManager.ConfirmUser(user.Initials, user.Password))
+            if (HotelManager.Instance.ConfirmUser(user.Initials, user.Password))
             {
                 // editt redirect to "homepage" for the group 
-                switch (HotelManager.user.Position)
+                switch (HotelManager.Instance.GetUserPosition())
                 {
                     case 1:
                         return RedirectToAction("Privacy", "Owners");

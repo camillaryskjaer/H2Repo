@@ -1,4 +1,4 @@
-﻿using Landlyst.Models.TempModels;
+﻿using Landlyst.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,15 +8,30 @@ using System.Threading.Tasks;
 
 namespace Landlyst.DataHandling.Managers
 {
-    public static class HotelManager
+    public class HotelManager
     {
-        static SQL sQL = new SQL();
-        static public User user;
-        static Rinjdael rinjdael = new Rinjdael();
-        static Sha256 sha = new Sha256();
+        private static HotelManager instance;
+        private TempUserHandler userHandler;
+        private HotelManager() { }
 
-        public static bool ConfirmUser(string initials, string password)
+        public static HotelManager Instance
         {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new HotelManager();
+                }
+                return instance;
+            }
+        }
+
+        public bool ConfirmUser(string initials, string password)
+        {
+            SQL sQL = new SQL();
+            Rinjdael rinjdael = new Rinjdael();
+            Sha256 sha = new Sha256();
+
             try
             {
                 // creates sqlcommand to get the salt of user logging in
@@ -45,7 +60,7 @@ namespace Landlyst.DataHandling.Managers
                     row = sQL.SqlSelectCommand(command)[0];
                     int pos = int.Parse(row[0].ToString());
 
-                    user = new User(ini, pos);
+                    userHandler = new TempUserHandler(new User(ini, pos));
 
                     return true;
                 }
@@ -55,6 +70,10 @@ namespace Landlyst.DataHandling.Managers
                 return false;
             }
             return false;
+        }
+        public int GetUserPosition()
+        {
+            return userHandler.GetPosition();
         }
     }
 }
