@@ -1,5 +1,6 @@
 ﻿using Landlyst.DataHandling;
 using Landlyst.DataHandling.DataModel.TempModel;
+using Landlyst.Models.TempModels;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -19,7 +20,24 @@ namespace LandlystUsers
             DataRowCollection data = sQL.SqlSelectCommand(command);
             foreach (DataRow row in data)
             {
+                // rewrite to handle total price, and utilities
+                // 0 = number
+                // 1 = price pr day
+                // 2 = status
+                command = sQL.CreateCommand();
+                command.CommandText = "Select Name, PricePrDay From Utility Where Id In (Select UtilityId From Utilities Where RoomNumber = @roomnumber)";
+                command.Parameters.AddWithValue("@roomnumber", (int)row[0]);
+
                 TempRoom room = new TempRoom((int)row[0], (int)row[1], (int)row[2]);
+
+                DataRowCollection foundUtilities = sQL.SqlSelectCommand(command);
+                List<string> utils = new List<string>();
+                foreach (DataRow util in foundUtilities)
+                {
+                    utils.Add((string)util[0]);
+                    room.AddPrice((int)util[1]);
+                }
+                room.SetUtilities(utils);
                 rooms.Add(room);
             }
             Console.ReadLine();

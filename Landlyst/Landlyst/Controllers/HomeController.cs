@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Landlyst.Models;
 using Landlyst.DataHandling;
 using Landlyst.DataHandling.Managers;
+using Landlyst.DataHandling.DataModel;
 
 namespace Landlyst.Controllers
 {
@@ -33,6 +34,18 @@ namespace Landlyst.Controllers
         public IActionResult HomePage()
         {
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult Booking()
+        {
+            return View(HotelManager.Instance.GetRooms());
+        }
+
+        [HttpPost]
+        public IActionResult Booking(object temp)
+        {
+            return View(temp);
         }
 
         public IActionResult TermsofService()

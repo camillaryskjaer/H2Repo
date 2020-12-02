@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Landlyst.Models.TempModels;
+using Landlyst.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Landlyst.Controllers

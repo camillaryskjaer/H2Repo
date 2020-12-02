@@ -1,4 +1,5 @@
-﻿using Landlyst.Models;
+﻿using Landlyst.DataHandling.DataModel;
+using Landlyst.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -24,6 +25,38 @@ namespace Landlyst.DataHandling.Managers
                 }
                 return instance;
             }
+        }
+
+        public Rooms GetRooms()
+        {
+            Rooms rooms = new Rooms();
+            SQL sQL = new SQL();
+            SqlCommand command = sQL.CreateCommand();
+            command.CommandText = "Select * From Rooms";
+            DataRowCollection data = sQL.SqlSelectCommand(command);
+            foreach (DataRow row in data)
+            {
+                // rewrite to handle total price, and utilities
+                // 0 = number
+                // 1 = price pr day
+                // 2 = status
+                command = sQL.CreateCommand();
+                command.CommandText = "Select Name, PricePrDay From Utility Where Id In (Select UtilityId From Utilities Where RoomNumber = @roomnumber)";
+                command.Parameters.AddWithValue("@roomnumber", (int)row[0]);
+
+                Room room = new Room((int)row[0], (int)row[1], (int)row[2]);
+
+                DataRowCollection foundUtilities = sQL.SqlSelectCommand(command);
+                List<string> utils = new List<string>();
+                foreach (DataRow util in foundUtilities)
+                {
+                    utils.Add((string)util[0]);
+                    room.AddPrice((int)util[1]);
+                }
+                room.SetUtilities(utils);
+                rooms.rooms.Add(room);
+            }
+            return rooms;
         }
 
         public bool ConfirmUser(string initials, string password)

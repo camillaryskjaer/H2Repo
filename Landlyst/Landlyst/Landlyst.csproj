@@ -8,4 +8,9 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DataHandling\DataModel\TempModel\" />
+    <Folder Include="Models\TempModels\" />
+  </ItemGroup>
+
 </Project>

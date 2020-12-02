@@ -28,7 +28,7 @@ using Landlyst.Models;
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1f1c5a566def44871a2dc87a770b3ed7137f219a", @"/Views/Home/Login.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1f687e61126f0c76e370010e7c68d53cda143edc", @"/Views/_ViewImports.cshtml")]
-    public class Views_Home_Login : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Landlyst.Models.Login>
+    public class Views_Home_Login : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Landlyst.DataHandling.DataModel.Login>
     {
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
@@ -100,7 +100,7 @@ using Landlyst.Models;
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<Landlyst.Models.Login> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<Landlyst.DataHandling.DataModel.Login> Html { get; private set; }
     }
 }
 #pragma warning restore 1591
