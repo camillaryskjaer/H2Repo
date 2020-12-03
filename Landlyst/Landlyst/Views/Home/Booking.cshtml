@@ -7,7 +7,7 @@
                 <div>
                     <label>
                         Altan <br />
-                        <input type="checkbox" class="search" onchange="test()" value="Balcony," />
+                        <input type="checkbox" class="search" onchange="SearchWith()" value="Balcony," />
                     </label>
                 </div>
             </td>
@@ -16,7 +16,7 @@
                 <div>
                     <label>
                         2 senge / dobbelt seng <br />
-                        <input type="checkbox" class="search" onchange="test()" value="Multiple beds," />
+                        <input type="checkbox" class="search" onchange="SearchWith()" value="Multiple beds," />
                     </label>
                 </div>
             </td>
@@ -26,7 +26,7 @@
                     <input value="Bathtub" name="temp" hidden />
                     <label>
                         Badekar <br />
-                        <input type="checkbox" class="search" onchange="test()" value="Bathtub," />
+                        <input type="checkbox" class="search" onchange="SearchWith()" value="Bathtub," />
                     </label>
                 </div>
             </td>
@@ -35,7 +35,7 @@
                 <div>
                     <label>
                         Jacuzzi <br />
-                        <input type="checkbox" class="search" onchange="test()" value="Jacuzzi," />
+                        <input type="checkbox" class="search" onchange="SearchWith()" value="Jacuzzi," />
                     </label>
                 </div>
             </td>
@@ -44,7 +44,7 @@
                 <div>
                     <label>
                         Køkken <br />
-                        <input type="checkbox" class="search" onchange="test()" value="Kitchen," />
+                        <input type="checkbox" class="search" onchange="SearchWith()" value="Kitchen," />
                     </label>
                 </div>
             </td>
@@ -52,7 +52,7 @@
                 <div>
                     @using (Html.BeginForm("Booking", "Home"))
                     {
-                        <button type="submit" id="res" name="temp">Søg</button>
+                        <button type="submit" id="res" name="search">Søg</button>
                     }
                 </div>
             </td>
@@ -72,7 +72,7 @@
                 <p>
                     rum nummer @Model.rooms[i].Number
                     <br />
-                    starts pris @Model.rooms[i].Price
+                    pris pr dag : @Model.rooms[i].Price
                     <br />
                     Tilbehør:
                     <br />
@@ -82,16 +82,29 @@
                         <br />
                     }
                 </p>
-                <input type="checkbox" id="@Model.rooms[i].Number" />
+                <input type="checkbox" class="Book" value="@Model.rooms[i].Number," onchange="MultiBook()" />
             </div>
         </td>
     }
 </table>
+<div>
+    <label>Book valgte rum</label>
+    @using (Html.BeginForm("Test", "Home", FormMethod.Get))
+    {
+        <button type="submit" id="sel" name="selected"></button>
+    }
+</div>
 
 <script>
-    function test() {
+    function SearchWith() {
         var res = "";
         $(".search:checked").each(function (i, n) { res += $(n).val(); })
         $("#res").val(res);
     }
+    function MultiBook() {
+        var sel = "";
+        $(".Book:checked").each(function (i, n) { sel += $(n).val(); })
+        $("#sel").val(sel);
+    }
+
 </script>
