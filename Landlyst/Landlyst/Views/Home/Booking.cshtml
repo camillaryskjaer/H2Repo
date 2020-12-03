@@ -4,26 +4,57 @@
     <table>
         <tr>
             <td style="margin:20px; display:inline-block">
-                <label>
-                    Altan <br />
-                </label>
+                <div>
+                    <label>
+                        Altan <br />
+                        <input type="checkbox" class="search" onchange="test()" value="Balcony," />
+                    </label>
+                </div>
             </td>
 
             <td style="margin:20px; display:inline-block">
-                <label>2 senge / dobbelt seng <br /> <input type="checkbox" /></label>
+                <div>
+                    <label>
+                        2 senge / dobbelt seng <br />
+                        <input type="checkbox" class="search" onchange="test()" value="Multiple beds," />
+                    </label>
+                </div>
             </td>
 
             <td style="margin:20px; display:inline-block">
-                <label>Badekar <br /> <input type="checkbox" /></label>
+                <div>
+                    <input value="Bathtub" name="temp" hidden />
+                    <label>
+                        Badekar <br />
+                        <input type="checkbox" class="search" onchange="test()" value="Bathtub," />
+                    </label>
+                </div>
             </td>
 
             <td style="margin:20px; display:inline-block">
-                <label>Jacuzzi <br /> <input type="checkbox" /></label>
-
+                <div>
+                    <label>
+                        Jacuzzi <br />
+                        <input type="checkbox" class="search" onchange="test()" value="Jacuzzi," />
+                    </label>
+                </div>
             </td>
 
             <td style="margin:20px; display:inline-block">
-                <label>Køkken <br /> <input type="checkbox" /></label>
+                <div>
+                    <label>
+                        Køkken <br />
+                        <input type="checkbox" class="search" onchange="test()" value="Kitchen," />
+                    </label>
+                </div>
+            </td>
+            <td>
+                <div>
+                    @using (Html.BeginForm("Booking", "Home"))
+                    {
+                        <button type="submit" id="res" name="temp">Søg</button>
+                    }
+                </div>
             </td>
         </tr>
     </table>
@@ -56,3 +87,11 @@
         </td>
     }
 </table>
+
+<script>
+    function test() {
+        var res = "";
+        $(".search:checked").each(function (i, n) { res += $(n).val(); })
+        $("#res").val(res);
+    }
+</script>

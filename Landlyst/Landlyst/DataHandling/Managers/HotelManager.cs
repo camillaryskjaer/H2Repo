@@ -27,6 +27,71 @@ namespace Landlyst.DataHandling.Managers
             }
         }
 
+        public Rooms GetRooms(string searchBy)
+        {
+            // if there is searched for nothing
+            // return all rooms again
+            if (searchBy == null || searchBy == string.Empty)
+            {
+                return GetRooms();
+            }
+
+            Rooms rooms = new Rooms();
+            SQL sQL = new SQL();
+            SqlCommand command = sQL.CreateCommand();
+            command.CommandText = "Select * From Rooms";
+            DataRowCollection data = sQL.SqlSelectCommand(command);
+            foreach (DataRow row in data)
+            {
+                // room
+                // 0 = number
+                // 1 = price pr day
+                // 2 = status
+                command = sQL.CreateCommand();
+                command.CommandText = "Select Name, PricePrDay From Utility Where Id In (Select UtilityId From Utilities Where RoomNumber = @roomnumber)";
+                command.Parameters.AddWithValue("@roomnumber", (int)row[0]);
+
+                Room room = new Room((int)row[0], (int)row[1], (int)row[2]);
+
+                DataRowCollection foundUtilities = sQL.SqlSelectCommand(command);
+                List<string> utils = new List<string>();
+
+                foreach (DataRow util in foundUtilities)
+                {
+                    utils.Add((string)util[0]);
+                    room.AddPrice((int)util[1]);
+                }
+                room.SetUtilities(utils);
+                rooms.rooms.Add(room);
+            }
+            List<Room> searchResult = new List<Room>();
+
+            string[] searchBySplit = searchBy.Split(',');
+            IEnumerable<string> searchFor = searchBySplit.SkipLast(1);
+            foreach (Room r in rooms.rooms)
+            {
+                bool all = false;
+                foreach (string s in searchFor)
+                {
+                    if (r.GetUtilities().Contains(s))
+                    {
+                        all = true;
+                    }
+                    else
+                    {
+                        all = false;
+                        break;
+                    }
+                }
+                if (all)
+                {
+                    searchResult.Add(r);
+                }
+
+            }
+            rooms.rooms = searchResult;
+            return rooms;
+        }
         public Rooms GetRooms()
         {
             Rooms rooms = new Rooms();

@@ -43,9 +43,9 @@ namespace Landlyst.Controllers
         }
 
         [HttpPost]
-        public IActionResult Booking(object temp)
+        public IActionResult Booking(string temp)
         {
-            return View(temp);
+            return View(HotelManager.Instance.GetRooms(temp));
         }
 
         public IActionResult TermsofService()

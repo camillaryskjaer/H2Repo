@@ -1,6 +1,5 @@
 ﻿using Landlyst.DataHandling;
-using Landlyst.DataHandling.DataModel.TempModel;
-using Landlyst.Models.TempModels;
+using Landlyst.DataHandling.DataModel;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -13,7 +12,7 @@ namespace LandlystUsers
     {
         static void Main(string[] args)
         {
-            List<TempRoom> rooms = new List<TempRoom>();
+            List<Room> rooms = new List<Room>();
             SQL sQL = new SQL();
             SqlCommand command = sQL.CreateCommand();
             command.CommandText = "Select * From Rooms";
@@ -28,7 +27,7 @@ namespace LandlystUsers
                 command.CommandText = "Select Name, PricePrDay From Utility Where Id In (Select UtilityId From Utilities Where RoomNumber = @roomnumber)";
                 command.Parameters.AddWithValue("@roomnumber", (int)row[0]);
 
-                TempRoom room = new TempRoom((int)row[0], (int)row[1], (int)row[2]);
+                Room room = new Room((int)row[0], (int)row[1], (int)row[2]);
 
                 DataRowCollection foundUtilities = sQL.SqlSelectCommand(command);
                 List<string> utils = new List<string>();
@@ -39,6 +38,28 @@ namespace LandlystUsers
                 }
                 room.SetUtilities(utils);
                 rooms.Add(room);
+            }
+            List<Room> test = new List<Room>();
+            string[] ar = new string[] { "Balcony", "Multiple beds" };
+            foreach (Room r in rooms)
+            {
+                bool all = false;
+                foreach (string s in ar)
+                {
+                    if (r.GetUtilities().Contains(s))
+                    {
+                        all = true;
+                    }
+                    else
+                    {
+                        all = false;
+                        break;
+                    }
+                }
+                if (all)
+                {
+                    test.Add(r);
+                }
             }
             Console.ReadLine();
 
