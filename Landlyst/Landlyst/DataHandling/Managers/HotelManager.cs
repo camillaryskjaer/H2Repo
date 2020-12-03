@@ -39,7 +39,7 @@ namespace Landlyst.DataHandling.Managers
             Rooms rooms = new Rooms();
             SQL sQL = new SQL();
             SqlCommand command = sQL.CreateCommand();
-            command.CommandText = "Select * From Rooms";
+            command.CommandText = "Select * From Rooms Where status = 1";
             DataRowCollection data = sQL.SqlSelectCommand(command);
             foreach (DataRow row in data)
             {
@@ -97,7 +97,7 @@ namespace Landlyst.DataHandling.Managers
             Rooms rooms = new Rooms();
             SQL sQL = new SQL();
             SqlCommand command = sQL.CreateCommand();
-            command.CommandText = "Select * From Rooms";
+            command.CommandText = "Select * From Rooms Where Status = 1";
             DataRowCollection data = sQL.SqlSelectCommand(command);
             foreach (DataRow row in data)
             {
