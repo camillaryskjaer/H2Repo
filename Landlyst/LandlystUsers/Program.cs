@@ -1,5 +1,6 @@
 ﻿using Landlyst.DataHandling;
 using Landlyst.DataHandling.DataModel;
+using Landlyst.DataHandling.Sql;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,55 +13,32 @@ namespace LandlystUsers
     {
         static void Main(string[] args)
         {
-            List<Room> rooms = new List<Room>();
-            SQL sQL = new SQL();
-            SqlCommand command = sQL.CreateCommand();
-            command.CommandText = "Select * From Rooms";
-            DataRowCollection data = sQL.SqlSelectCommand(command);
-            foreach (DataRow row in data)
-            {
-                // rewrite to handle total price, and utilities
-                // 0 = number
-                // 1 = price pr day
-                // 2 = status
-                command = sQL.CreateCommand();
-                command.CommandText = "Select Name, PricePrDay From Utility Where Id In (Select UtilityId From Utilities Where RoomNumber = @roomnumber)";
-                command.Parameters.AddWithValue("@roomnumber", (int)row[0]);
 
-                Room room = new Room((int)row[0], (int)row[1], (int)row[2]);
 
-                DataRowCollection foundUtilities = sQL.SqlSelectCommand(command);
-                List<string> utils = new List<string>();
-                foreach (DataRow util in foundUtilities)
-                {
-                    utils.Add((string)util[0]);
-                    room.AddPrice((int)util[1]);
-                }
-                room.SetUtilities(utils);
-                rooms.Add(room);
-            }
-            List<Room> test = new List<Room>();
-            string[] ar = new string[] { "Balcony", "Multiple beds" };
-            foreach (Room r in rooms)
-            {
-                bool all = false;
-                foreach (string s in ar)
-                {
-                    if (r.GetUtilities().Contains(s))
-                    {
-                        all = true;
-                    }
-                    else
-                    {
-                        all = false;
-                        break;
-                    }
-                }
-                if (all)
-                {
-                    test.Add(r);
-                }
-            }
+
+
+            //List<Room> test = new List<Room>();
+            //string[] ar = new string[] { "Balcony", "Multiple beds" };
+            //foreach (Room r in rooms)
+            //{
+            //    bool all = false;
+            //    foreach (string s in ar)
+            //    {
+            //        if (r.GetUtilities().Contains(s))
+            //        {
+            //            all = true;
+            //        }
+            //        else
+            //        {
+            //            all = false;
+            //            break;
+            //        }
+            //    }
+            //    if (all)
+            //    {
+            //        test.Add(r);
+            //    }
+            //}
             Console.ReadLine();
 
             //        while (true)
