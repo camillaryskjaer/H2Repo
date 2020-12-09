@@ -13,4 +13,8 @@
     <Folder Include="Models\TempModels\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\lib\FrontPageImg.png" />
+  </ItemGroup>
+
 </Project>

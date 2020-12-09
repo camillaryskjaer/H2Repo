@@ -1,0 +1,105 @@
+﻿@model Rooms
+
+<div>
+    <p style="text-align:center">
+        Du har valgt nedestående til booking
+    </p>
+
+    <table>
+        @for (int i = 0; i < Model.rooms.Count; i++)
+        {
+            if (i == 0 || i % 3 == 0)
+            {
+                <tr></tr>
+            }
+            <td style="display:inline-block; margin:20px;">
+                <div style="border:solid">
+                    <p>
+                        <input type="text" class="room" value="@Model.rooms[i].Number" hidden />
+                        Rum nummer: @Model.rooms[i].Number
+                        <br />
+                        Pris : @Model.rooms[i].Price
+                        <br />
+                        @foreach (string util in Model.rooms[i].GetUtilities())
+                        {
+                            @util
+                            <br />
+                        }
+                    </p>
+                </div>
+            </td>
+        }
+    </table>
+
+    <br />
+    <hr />
+    <br />
+
+    <div>
+        @using (Html.BeginForm("BookingSuccess", "Home"))
+        {
+            <table>
+                <tr>
+                    <td style="display:inline-block">
+                        <label>
+                            Navn:
+                            <input type="text" class="data" />
+                        </label>
+                    </td>
+                    <td style="display:inline-block; margin-left:20px;">
+                        <label>
+                            Addresse:
+                            <input type="text" class="data" />
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="display:inline-block">
+                        Postnummer:
+                        <input type="number" class="data" />
+                    </td>
+                    <td style="display:inline-block; margin-left:20px;">
+                        By:
+                        <input type="text" class="data" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="display:inline-block">
+                        Telefonnummer:
+                        <input type="number" class="data" />
+                    </td>
+                    <td style="display:inline-block; margin-left:20px;">
+                        Email:
+                        <input type="text" class="data" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="display:inline-block">
+                        Fra:
+                        <input type="date" class="data" />
+                    </td>
+                    <td style="display:inline-block; margin-left:20px;">
+                        Til:
+                        <input type="date" class="data" />
+                    </td>
+                </tr>
+            </table>
+            <input name="rooms" id="rs" hidden />
+            <button type="submit" id="res" name="data" onclick="CollectData()">Book</button>
+        }
+    </div>
+</div>
+
+<script>
+    function CollectData() {
+        var res = "";
+        $(".data").each(function (i, n) { res += $(n).val() + ","; })
+        $("#res").val(res);
+        GetRooms();
+    }
+    function GetRooms() {
+        var rs = "";
+        $(".room").each(function (i, n) { rs += $(n).val() + ","; })
+        $("#rs").val(rs);
+    }
+</script>

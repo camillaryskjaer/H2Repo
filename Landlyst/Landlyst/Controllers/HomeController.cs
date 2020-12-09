@@ -48,9 +48,15 @@ namespace Landlyst.Controllers
             return View(HotelManager.Instance.GetRooms(search));
         }
 
-        public IActionResult Test(string selected)
+        public IActionResult ConfirmBooking(string selected)
         {
-            return null;
+            return View(HotelManager.Instance.GetRooms(HotelManager.Instance.SplitNumbers(selected)));
+        }
+
+        public IActionResult BookingSuccess(string data, string rooms)
+        {
+            HotelManager.Instance.BookRooms(data, rooms);
+            return View();
         }
 
         public IActionResult TermsofService()

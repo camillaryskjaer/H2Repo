@@ -68,6 +68,57 @@ namespace Landlyst.DataHandling.Managers
             return rooms;
         }
 
+        public Rooms GetRooms(int[] numbers)
+        {
+            if (numbers.Count() > 0 && numbers != null)
+            {
+                Rooms rooms = GetRooms();
+                List<Room> searchResult = new List<Room>();
+
+                foreach (int number in numbers)
+                {
+                    searchResult.Add(rooms.rooms.Where(x => x.Number == number).FirstOrDefault());
+                }
+                rooms.rooms = searchResult;
+                return rooms;
+
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public void BookRooms(string data, string rooms)
+        {
+            SQL sQL = new SQL();
+            SqlCommands sqlCommands = new SqlCommands();
+
+            // data:
+            // 0 : name - string
+            // 1 : address - string
+            // 2 : zipcode - int
+            // 3 : city - string
+            // 4 : phone - int
+            // 5 : email - string
+            // 6 : from date - datetime
+            // 7 : to date - datetime
+            // last string in data is empty
+            string[] x = data.Split(',');
+            sqlCommands.InsertBooking(sQL.getConnection(), x[0], x[1], int.Parse(x[2]), x[3], int.Parse(x[4]), x[5], DateTime.Parse(x[6]), DateTime.Parse(x[7]));
+
+            // rooms : number - string
+            // last string in rooms is empty
+            DataRowCollection dataRows = sqlCommands.GetReservationId(sQL.getConnection(), x[0], int.Parse(x[4]));
+            DataRow dataRow = dataRows[0];
+            int y = (int)dataRow[0];
+            string[] roomnumbers = rooms.Split(',');
+            for (int i = 0; i < roomnumbers.Length - 1; i++)
+            {
+                sqlCommands.InsertReservatedRooms(sQL.getConnection(), y, int.Parse(roomnumbers[i]));
+            }
+        }
+
         public Rooms GetRooms()
         {
             Rooms rooms = new Rooms();
@@ -133,6 +184,18 @@ namespace Landlyst.DataHandling.Managers
         public int GetUserPosition()
         {
             return userHandler.GetPosition();
+        }
+
+        public int[] SplitNumbers(string input)
+        {
+            string[] inputsplit = input.Split(',');
+
+            int[] res = new int[inputsplit.Length - 1];
+            for (int i = 0; i < inputsplit.Length - 1; i++)
+            {
+                res[i] = int.Parse(inputsplit[i]);
+            }
+            return res;
         }
     }
 }
