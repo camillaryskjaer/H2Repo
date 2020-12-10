@@ -1,5 +1,6 @@
 ﻿using Landlyst.DataHandling;
 using Landlyst.DataHandling.DataModel;
+using Landlyst.DataHandling.Interfaces;
 using Landlyst.DataHandling.Sql;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,17 @@ namespace LandlystUsers
         static void Main(string[] args)
         {
 
+            //Rinjdael rinjdael = FactoryTest.Instance.GetRinjdael();
+            //RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+            //byte[] buffer = new byte[128];
+            //rng.GetBytes(buffer);
+            //string encrypted = rinjdael.Encrypt("test", "Landlyst", buffer);
 
+            //IHash hash = FactoryTest.Instance.GetHash();
+            //byte[] hashed = hash.GetHash(Convert.FromBase64String(encrypted));
+            //string hashedString = Convert.ToBase64String(hashed);
+
+            //SqlConnection con = FactoryTest.Instance.GetSqlConnection();
 
 
             //List<Room> test = new List<Room>();

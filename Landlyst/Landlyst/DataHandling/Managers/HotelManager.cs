@@ -1,9 +1,12 @@
 ﻿using Landlyst.DataHandling.DataModel;
+using Landlyst.DataHandling.Factories;
+using Landlyst.DataHandling.Interfaces;
 using Landlyst.DataHandling.Sql;
 using Landlyst.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 
 namespace Landlyst.DataHandling.Managers
@@ -90,10 +93,10 @@ namespace Landlyst.DataHandling.Managers
         public Rooms GetRooms()
         {
             Rooms rooms = new Rooms();
-            SQL sQL = new SQL();
+            SqlConnection sqlConnection = SqlFactory.Instance.GetSqlConnection();
             SqlCommands sqlCommands = new SqlCommands();
 
-            DataRowCollection data = sqlCommands.GetAllRooms(sQL.GetConnection());
+            DataRowCollection data = sqlCommands.GetAllRooms(sqlConnection);
             foreach (DataRow row in data)
             {
                 // rewrite to handle total price, and utilities
@@ -102,7 +105,7 @@ namespace Landlyst.DataHandling.Managers
                 // 2 = status
                 Room room = new Room((int)row[0], (int)row[1], (int)row[2]);
 
-                DataRowCollection foundUtilities = sqlCommands.GetUtilities(sQL.GetConnection(), (int)row[0]);
+                DataRowCollection foundUtilities = sqlCommands.GetUtilities(sqlConnection, (int)row[0]);
                 List<string> utils = new List<string>();
 
                 foreach (DataRow util in foundUtilities)
@@ -118,8 +121,8 @@ namespace Landlyst.DataHandling.Managers
 
         public void BookRooms(string data, string rooms)
         {
-            SQL sQL = new SQL();
-            SqlCommands sqlCommands = new SqlCommands();
+            SqlConnection sqlConnection = SqlFactory.Instance.GetSqlConnection();
+            SqlCommands sqlCommands = SqlFactory.Instance.GetSqlCommands();
 
             // data:
             // 0 : name - string
@@ -132,39 +135,39 @@ namespace Landlyst.DataHandling.Managers
             // 7 : to date - datetime
             // last string in data is empty
             string[] x = data.Split(',');
-            sqlCommands.InsertBooking(sQL.GetConnection(), x[0], x[1], int.Parse(x[2]), x[3], int.Parse(x[4]), x[5], DateTime.Parse(x[6]), DateTime.Parse(x[7]));
+            sqlCommands.InsertBooking(sqlConnection, x[0], x[1], int.Parse(x[2]), x[3], int.Parse(x[4]), x[5], DateTime.Parse(x[6]), DateTime.Parse(x[7]));
 
             // rooms : number - string
             // last string in rooms is empty
-            DataRowCollection dataRows = sqlCommands.GetReservationId(sQL.GetConnection(), x[0], int.Parse(x[4]));
+            DataRowCollection dataRows = sqlCommands.GetReservationId(sqlConnection, x[0], int.Parse(x[4]));
             DataRow dataRow = dataRows[0];
             int y = (int)dataRow[0];
             string[] roomnumbers = rooms.Split(',');
             for (int i = 0; i < roomnumbers.Length - 1; i++)
             {
-                sqlCommands.InsertReservatedRooms(sQL.GetConnection(), y, int.Parse(roomnumbers[i]));
+                sqlCommands.InsertReservatedRooms(sqlConnection, y, int.Parse(roomnumbers[i]));
             }
         }
 
         public bool ConfirmUser(string initials, string password)
         {
-            SQL sQL = new SQL();
-            SqlCommands sqlCommands = new SqlCommands();
-            Rinjdael rinjdael = new Rinjdael();
-            Sha256 sha = new Sha256();
+            SqlConnection sqlConnection = SqlFactory.Instance.GetSqlConnection();
+            SqlCommands sqlCommands = SqlFactory.Instance.GetSqlCommands();
+            Rinjdael rinjdael = SecurityFactory.Instance.GetRinjdael();
+            IHash sha = SecurityFactory.Instance.GetHashing();
 
             try
             {
                 // converts salt to string
-                DataRow row = sqlCommands.GetSalt(sQL.GetConnection(), initials)[0];
+                DataRow row = sqlCommands.GetSalt(sqlConnection, initials)[0];
                 string salt = row[0].ToString();
 
-                row = sqlCommands.GetInitials(sQL.GetConnection(), Convert.ToBase64String(sha.GetHash(Convert.FromBase64String(rinjdael.Encrypt(password, "Landlyst", Convert.FromBase64String(salt))))))[0];
+                row = sqlCommands.GetInitials(sqlConnection, Convert.ToBase64String(sha.GetHash(Convert.FromBase64String(rinjdael.Encrypt(password, "Landlyst", Convert.FromBase64String(salt))))))[0];
                 string ini = row[0].ToString();
 
                 if (initials == ini)
                 {
-                    row = sqlCommands.GetPosition(sQL.GetConnection(), ini)[0];
+                    row = sqlCommands.GetPosition(sqlConnection, ini)[0];
                     int pos = int.Parse(row[0].ToString());
 
                     _userHandler = new UserHandler(new User(ini, pos));
