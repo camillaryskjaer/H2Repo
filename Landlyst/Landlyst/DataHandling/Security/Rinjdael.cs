@@ -10,7 +10,7 @@ namespace Landlyst.DataHandling
 {
     public class Rinjdael
     {
-        RijndaelManaged rijndael = new RijndaelManaged();
+        private RijndaelManaged rijndael = new RijndaelManaged();
         public string Encrypt(string Message, string Code, byte[] Salt)
         {
             MemoryStream memoryStream = new MemoryStream();

@@ -9,11 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DataHandling\DataModel\TempModel\" />
-    <Folder Include="Models\TempModels\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\lib\FrontPageImg.png" />
   </ItemGroup>
 

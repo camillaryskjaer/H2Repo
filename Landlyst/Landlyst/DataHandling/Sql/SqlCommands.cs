@@ -101,6 +101,24 @@ namespace Landlyst.DataHandling.Sql
             return rows;
         }
 
+        public DataRowCollection GetReservationId(SqlConnection con, string name, int phone)
+        {
+            SqlDataAdapter da = new SqlDataAdapter();
+            DataSet ds = new DataSet();
+
+            SqlConnection sqlcon = con;
+            SqlCommand command = new SqlCommand("exec SelectReservationId @name, @phone", sqlcon);
+            command.Parameters.AddWithValue("@name", name);
+            command.Parameters.AddWithValue("@phone", phone);
+            da.SelectCommand = command;
+
+            sqlcon.Open();
+            da.Fill(ds);
+            sqlcon.Close();
+
+            return ds.Tables[0].Rows;
+        }
+
         public void InsertBooking(SqlConnection con, string name, string address, int zipcode, string city, int phone, string email, DateTime rentedfrom, DateTime rentedto)
         {
             SqlConnection sqlcon = con;
@@ -129,24 +147,6 @@ namespace Landlyst.DataHandling.Sql
             sqlcon.Open();
             command.ExecuteNonQuery();
             sqlcon.Close();
-        }
-
-        public DataRowCollection GetReservationId(SqlConnection con, string name, int phone)
-        {
-            SqlDataAdapter da = new SqlDataAdapter();
-            DataSet ds = new DataSet();
-
-            SqlConnection sqlcon = con;
-            SqlCommand command = new SqlCommand("exec SelectReservationId @name, @phone", sqlcon);
-            command.Parameters.AddWithValue("@name", name);
-            command.Parameters.AddWithValue("@phone", phone);
-            da.SelectCommand = command;
-
-            sqlcon.Open();
-            da.Fill(ds);
-            sqlcon.Close();
-
-            return ds.Tables[0].Rows;
         }
     }
 }

@@ -9,21 +9,21 @@ namespace Landlyst.DataHandling.Managers
 {
     public class UserHandler
     {
-        private User User;
+        private User _user;
 
         public UserHandler(User user)
         {
-            User = user;
+            _user = user;
         }
 
         public int GetPosition()
         {
-            return User.Position;
+            return _user.Position;
         }
 
         public string GetInitials()
         {
-            return User.Initials;
+            return _user.Initials;
         }
     }
 }

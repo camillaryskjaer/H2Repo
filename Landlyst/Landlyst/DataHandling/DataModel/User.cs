@@ -7,35 +7,35 @@ namespace Landlyst.DataHandling.DataModel
 {
     public class User
     {
-        private string initials;
-        private int position;
+        private string _initials;
+        private int _position;
 
         public User(string Initials, int Position)
         {
-            initials = Initials;
-            position = Position;
+            _initials = Initials;
+            _position = Position;
         }
 
         public int Position
         {
-            get { return position; }
+            get { return _position; }
             private set
             {
-                if (position == 0)
+                if (_position == 0)
                 {
-                    position = value;
+                    _position = value;
                 }
             }
         }
 
         public string Initials
         {
-            get { return initials; }
+            get { return _initials; }
             private set
             {
-                if (initials == null || initials == string.Empty)
+                if (_initials == null || _initials == string.Empty)
                 {
-                    initials = value;
+                    _initials = value;
                 }
             }
         }
