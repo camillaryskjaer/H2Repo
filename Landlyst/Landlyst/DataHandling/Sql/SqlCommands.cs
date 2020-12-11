@@ -11,6 +11,7 @@ namespace Landlyst.DataHandling.Sql
     // using stored procedures
     public class SqlCommands
     {
+        // calls a stored procedure to get all rooms
         public DataRowCollection GetAllRooms(SqlConnection con)
         {
             SqlDataAdapter da = new SqlDataAdapter();
@@ -31,6 +32,7 @@ namespace Landlyst.DataHandling.Sql
             return rows;
         }
 
+        // calls a stored procedure to get utilities to the roomnumber provided
         public DataRowCollection GetUtilities(SqlConnection con, int roomnumber)
         {
             SqlDataAdapter da = new SqlDataAdapter();
@@ -49,6 +51,7 @@ namespace Landlyst.DataHandling.Sql
             return rows;
         }
 
+        // calls a stored procedure to get the salt of provided initials
         public DataRowCollection GetSalt(SqlConnection con, string initials)
         {
             SqlDataAdapter da = new SqlDataAdapter();
@@ -67,6 +70,7 @@ namespace Landlyst.DataHandling.Sql
             return rows;
         }
 
+        // calls a stored procedure to get the initials of the provided password matches
         public DataRowCollection GetInitials(SqlConnection con, string password)
         {
             SqlDataAdapter da = new SqlDataAdapter();
@@ -85,6 +89,7 @@ namespace Landlyst.DataHandling.Sql
             return rows;
         }
 
+        // calls a stored procedure to get the position of the provided initials
         public DataRowCollection GetPosition(SqlConnection con, string initials)
         {
             SqlDataAdapter da = new SqlDataAdapter();
@@ -103,6 +108,7 @@ namespace Landlyst.DataHandling.Sql
             return rows;
         }
 
+        // calls a stored procedure to get the reservation id from the costumers name and phone number
         public DataRowCollection GetReservationId(SqlConnection con, string name, int phone)
         {
             SqlDataAdapter da = new SqlDataAdapter();
@@ -121,6 +127,7 @@ namespace Landlyst.DataHandling.Sql
             return ds.Tables[0].Rows;
         }
 
+        // calls a stored procedure to insert a booking
         public void InsertBooking(SqlConnection con, string name, string address, int zipcode, string city, int phone, string email, DateTime rentedfrom, DateTime rentedto)
         {
             SqlConnection sqlcon = con;
@@ -139,6 +146,7 @@ namespace Landlyst.DataHandling.Sql
             sqlcon.Close();
         }
 
+        // calls a stored procedure to insert what rooms have been booked to what reservation
         public void InsertReservatedRooms(SqlConnection con, int reservationId, int roomNumber)
         {
             SqlConnection sqlcon = con;
