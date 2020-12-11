@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Landlyst.DataHandling.DataModel
 {
+    // object class to handle individual rooms
     public class Room
     {
         private int _number;

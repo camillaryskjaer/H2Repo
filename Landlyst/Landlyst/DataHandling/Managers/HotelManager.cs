@@ -17,6 +17,7 @@ namespace Landlyst.DataHandling.Managers
         private UserHandler _userHandler;
         private HotelManager() { }
 
+        // returns the manager, and if the manager doesnt exsist create the instance of the manager.
         public static HotelManager Instance
         {
             get
@@ -29,6 +30,7 @@ namespace Landlyst.DataHandling.Managers
             }
         }
 
+        // method returns rooms from searched utilities by the user
         public Rooms GetRooms(string searchBy)
         {
             // if there is searched for nothing
@@ -40,10 +42,16 @@ namespace Landlyst.DataHandling.Managers
 
             Rooms rooms = GetRooms();
 
+            // new list to contain the rooms the user searched for
             List<Room> searchResult = new List<Room>();
 
+            // splits the search string, from the user.
             string[] searchBySplit = searchBy.Split(',');
+
+            // skips last string, as it is empty
             IEnumerable<string> searchFor = searchBySplit.SkipLast(1);
+
+            // loops through all rooms, and checks for searched utilities
             foreach (Room r in rooms.rooms)
             {
                 bool all = false;
@@ -69,6 +77,8 @@ namespace Landlyst.DataHandling.Managers
             return rooms;
         }
 
+        // method returns rooms based on room numbers
+        // this is for booking multiple rooms at once
         public Rooms GetRooms(int[] numbers)
         {
             if (numbers.Count() > 0 && numbers != null)
@@ -90,12 +100,14 @@ namespace Landlyst.DataHandling.Managers
             }
         }
 
+        // method returns all rooms
         public Rooms GetRooms()
         {
             Rooms rooms = new Rooms();
             SqlConnection sqlConnection = SqlFactory.Instance.GetSqlConnection();
-            SqlCommands sqlCommands = new SqlCommands();
+            SqlCommands sqlCommands = SqlFactory.Instance.GetSqlCommands();
 
+            // gets rows of data from database
             DataRowCollection data = sqlCommands.GetAllRooms(sqlConnection);
             foreach (DataRow row in data)
             {
@@ -103,8 +115,11 @@ namespace Landlyst.DataHandling.Managers
                 // 0 = number
                 // 1 = price pr day
                 // 2 = status
+
+                // creates room 
                 Room room = new Room((int)row[0], (int)row[1], (int)row[2]);
 
+                // gets utilities for the room
                 DataRowCollection foundUtilities = sqlCommands.GetUtilities(sqlConnection, (int)row[0]);
                 List<string> utils = new List<string>();
 
@@ -119,6 +134,7 @@ namespace Landlyst.DataHandling.Managers
             return rooms;
         }
 
+        // method books rooms in the database
         public void BookRooms(string data, string rooms)
         {
             SqlConnection sqlConnection = SqlFactory.Instance.GetSqlConnection();
@@ -147,8 +163,11 @@ namespace Landlyst.DataHandling.Managers
             {
                 sqlCommands.InsertReservatedRooms(sqlConnection, y, int.Parse(roomnumbers[i]));
             }
+
+            SendEmail();
         }
 
+        // method for employee login
         public bool ConfirmUser(string initials, string password)
         {
             SqlConnection sqlConnection = SqlFactory.Instance.GetSqlConnection();
@@ -162,9 +181,11 @@ namespace Landlyst.DataHandling.Managers
                 DataRow row = sqlCommands.GetSalt(sqlConnection, initials)[0];
                 string salt = row[0].ToString();
 
+                // gets initials if password is correct
                 row = sqlCommands.GetInitials(sqlConnection, Convert.ToBase64String(sha.GetHash(Convert.FromBase64String(rinjdael.Encrypt(password, "Landlyst", Convert.FromBase64String(salt))))))[0];
                 string ini = row[0].ToString();
 
+                // checks if both sets of initials matches
                 if (initials == ini)
                 {
                     row = sqlCommands.GetPosition(sqlConnection, ini)[0];
@@ -182,6 +203,7 @@ namespace Landlyst.DataHandling.Managers
             return false;
         }
 
+        // method returns loged in users position
         public int GetUserPosition()
         {
             return _userHandler.GetPosition();
@@ -197,6 +219,13 @@ namespace Landlyst.DataHandling.Managers
                 res[i] = int.Parse(inputsplit[i]);
             }
             return res;
+        }
+
+        // placeholder method.
+        // sends email to the user with booking information
+        public void SendEmail()
+        {
+
         }
     }
 }

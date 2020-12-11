@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace Landlyst.DataHandling.Sql
 {
+    // class containing sql commands
+    // using stored procedures
     public class SqlCommands
     {
         public DataRowCollection GetAllRooms(SqlConnection con)

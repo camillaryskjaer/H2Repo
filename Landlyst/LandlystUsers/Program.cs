@@ -10,6 +10,7 @@ using System.Security.Cryptography;
 
 namespace LandlystUsers
 {
+    // project for testing the system
     class Program
     {
         static void Main(string[] args)

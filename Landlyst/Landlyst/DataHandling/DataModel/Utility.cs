@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace Landlyst.DataHandling.DataModel
 {
+    // object class to handle individual utilities
     public class Utility
     {
         private int _pricePrDay;

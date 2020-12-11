@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Landlyst.DataHandling
 {
+    // class to encrypt data
     public class Rinjdael
     {
         private RijndaelManaged rijndael = new RijndaelManaged();

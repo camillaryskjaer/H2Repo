@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Landlyst.DataHandling.Managers
 {
+    // class to contain a user, and prevet tampering.
     public class UserHandler
     {
         private User _user;

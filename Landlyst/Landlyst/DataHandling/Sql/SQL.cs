@@ -7,6 +7,7 @@ using System.Data;
 
 namespace Landlyst.DataHandling.Sql
 {
+    // class to contain the sql connection
     public class SQL
     {
         // Connection string to local database

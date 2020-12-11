@@ -7,6 +7,7 @@ using System.Security.Cryptography;
 
 namespace Landlyst.DataHandling
 {
+    // class to get hash value
     public class Sha256 : IHash
     {
         public byte[] GetHash(byte[] input)

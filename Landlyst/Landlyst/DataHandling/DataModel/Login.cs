@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace Landlyst.DataHandling.DataModel
 {
+    // object class to handle user logins
     public class Login
     {
         private string _initials;
