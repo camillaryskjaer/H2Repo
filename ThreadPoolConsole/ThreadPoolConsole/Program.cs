@@ -58,7 +58,9 @@ namespace ThreadPoolConsole
         {
             Console.WriteLine("Is thread alive : " + Thread.CurrentThread.IsAlive);
             Console.WriteLine("Is thread background : " + Thread.CurrentThread.IsBackground);
+            Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
             Console.WriteLine("Thread priority" + Thread.CurrentThread.Priority);
+            Thread.Sleep(100);
         }
 
         //static void ProcessWithThreadPool()
