@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\ThreadPoolConsole\\ThreadPoolConsole\\ThreadPoolConsole.csproj": {}
+    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\ThreadPoolConsole\\ThreadPoolConsole\\ThreadPoolConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\ThreadPoolConsole\\ThreadPoolConsole\\ThreadPoolConsole.csproj": {
+    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\ThreadPoolConsole\\ThreadPoolConsole\\ThreadPoolConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\ThreadPoolConsole\\ThreadPoolConsole\\ThreadPoolConsole.csproj",
+        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\ThreadPoolConsole\\ThreadPoolConsole\\ThreadPoolConsole.csproj",
         "projectName": "ThreadPoolConsole",
-        "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\ThreadPoolConsole\\ThreadPoolConsole\\ThreadPoolConsole.csproj",
+        "projectPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\ThreadPoolConsole\\ThreadPoolConsole\\ThreadPoolConsole.csproj",
         "packagesPath": "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\ThreadPoolConsole\\ThreadPoolConsole\\obj\\",
+        "outputPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\ThreadPoolConsole\\ThreadPoolConsole\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
