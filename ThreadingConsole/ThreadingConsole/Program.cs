@@ -5,23 +5,24 @@ namespace ThreadingConsole
 {
     class Program
     {
+        static char ch = '*';
         static void Main(string[] args)
         {
-            // creates a thread that runs workthreadfunction
-            Thread t = new Thread(WorkThreadFunction);
-            // sets the threads name to tone
-            t.Name = "tOne";
-            // starts the thread
-            t.Start();
+            //    // creates a thread that runs workthreadfunction
+            //    Thread t = new Thread(WorkThreadFunction);
+            //    // sets the threads name to tone
+            //    t.Name = "tOne";
+            //    // starts the thread
+            //    t.Start();
 
-            // sleeps main thread for better visuals
-            Thread.Sleep(100);
-            // creates new thread that runs workthreadfunction
-            t = new Thread(WorkThreadFunction);
-            // names the thread to ttwo
-            t.Name = "tTwo";
-            // starts the thread
-            t.Start();
+            //    // sleeps main thread for better visuals
+            //    Thread.Sleep(100);
+            //    // creates new thread that runs workthreadfunction
+            //    t = new Thread(WorkThreadFunction);
+            //    // names the thread to ttwo
+            //    t.Name = "tTwo";
+            //    // starts the thread
+            //    t.Start();
 
             //Thread tEasy = new Thread(Easy);
             //tEasy.Start();
@@ -43,7 +44,34 @@ namespace ThreadingConsole
             //    }
             //}
 
-            Console.ReadLine();
+            Thread t = new Thread(Print);
+            t.Name = "printer";
+            t.Start();
+
+            t = new Thread(Read);
+            t.Start();
+
+            while (true)
+            {
+
+            }
+        }
+
+        static void Read()
+        {
+            while (true)
+            {
+                ch = Console.ReadLine()[0];
+            }
+        }
+
+        static void Print()
+        {
+            while (true)
+            {
+                Console.Write(ch);
+                Thread.Sleep(500);
+            }
         }
 
         //static void TempGen()
@@ -86,17 +114,17 @@ namespace ThreadingConsole
         //    }
         //}
 
-        static void WorkThreadFunction()
-        {
-            // runs loop 5 times
-            for (int i = 0; i < 5; i++)
-            {
-                // prints simple thread and thread name
-                Console.WriteLine("Simple Thread");
-                Console.WriteLine(Thread.CurrentThread.Name);
-                // sleeps thread for better visuals
-                Thread.Sleep(100);
-            }
-        }
+        //static void WorkThreadFunction()
+        //{
+        //    // runs loop 5 times
+        //    for (int i = 0; i < 5; i++)
+        //    {
+        //        // prints simple thread and thread name
+        //        Console.WriteLine("Simple Thread");
+        //        Console.WriteLine(Thread.CurrentThread.Name);
+        //        // sleeps thread for better visuals
+        //        Thread.Sleep(100);
+        //    }
+        //}
     }
 }
