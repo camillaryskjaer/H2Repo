@@ -61,7 +61,14 @@ namespace ThreadingConsole
         {
             while (true)
             {
-                ch = Console.ReadLine()[0];
+                // try catch to stop program from breaking if no key was entered
+                try
+                {
+                    ch = Console.ReadLine()[0];
+                }
+                catch
+                {
+                }
             }
         }
 
