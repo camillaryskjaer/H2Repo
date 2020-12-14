@@ -14,7 +14,7 @@ namespace ThreadPoolConsole
             //    //ThreadPool.QueueUserWorkItem(new WaitCallback(Task2));
             //    ThreadPool.QueueUserWorkItem(Task1);
             //    ThreadPool.QueueUserWorkItem(Task2);
-            //// Forskellen er at med awaitcallback bliver tråden afviklet færdig inden den næste tråd tager over.
+            //// Forskellen er at med waitcallback bliver tråden afviklet færdig inden den næste tråd tager over.
             //// Uden waitcallback kørrer trådene som det passer dem.
             //}
 
