@@ -1,0 +1,12 @@
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\obj\Debug\netcoreapp3.1\ThreadPoolConsole.AssemblyInfoInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\obj\Debug\netcoreapp3.1\ThreadPoolConsole.AssemblyInfo.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\obj\Debug\netcoreapp3.1\ThreadPoolConsole.csproj.CoreCompileInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\bin\Debug\netcoreapp3.1\ThreadPoolConsole.exe
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\bin\Debug\netcoreapp3.1\ThreadPoolConsole.deps.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\bin\Debug\netcoreapp3.1\ThreadPoolConsole.runtimeconfig.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\bin\Debug\netcoreapp3.1\ThreadPoolConsole.runtimeconfig.dev.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\bin\Debug\netcoreapp3.1\ThreadPoolConsole.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\bin\Debug\netcoreapp3.1\ThreadPoolConsole.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\obj\Debug\netcoreapp3.1\ThreadPoolConsole.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\obj\Debug\netcoreapp3.1\ThreadPoolConsole.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\obj\Debug\netcoreapp3.1\ThreadPoolConsole.genruntimeconfig.cache
