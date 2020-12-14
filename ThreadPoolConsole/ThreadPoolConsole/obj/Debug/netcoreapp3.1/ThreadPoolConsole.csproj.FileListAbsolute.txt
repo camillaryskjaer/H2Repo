@@ -10,3 +10,4 @@ C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConso
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\obj\Debug\netcoreapp3.1\ThreadPoolConsole.dll
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\obj\Debug\netcoreapp3.1\ThreadPoolConsole.pdb
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\obj\Debug\netcoreapp3.1\ThreadPoolConsole.genruntimeconfig.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ThreadPoolConsole\ThreadPoolConsole\obj\Debug\netcoreapp3.1\ThreadPoolConsole.csprojAssemblyReference.cache
