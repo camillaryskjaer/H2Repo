@@ -1,0 +1,13 @@
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\DiningPhilophers\DiningPhilophers\bin\Debug\netcoreapp3.1\DiningPhilophers.exe
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\DiningPhilophers\DiningPhilophers\bin\Debug\netcoreapp3.1\DiningPhilophers.deps.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\DiningPhilophers\DiningPhilophers\bin\Debug\netcoreapp3.1\DiningPhilophers.runtimeconfig.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\DiningPhilophers\DiningPhilophers\bin\Debug\netcoreapp3.1\DiningPhilophers.runtimeconfig.dev.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\DiningPhilophers\DiningPhilophers\bin\Debug\netcoreapp3.1\DiningPhilophers.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\DiningPhilophers\DiningPhilophers\bin\Debug\netcoreapp3.1\DiningPhilophers.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\DiningPhilophers\DiningPhilophers\obj\Debug\netcoreapp3.1\DiningPhilophers.csprojAssemblyReference.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\DiningPhilophers\DiningPhilophers\obj\Debug\netcoreapp3.1\DiningPhilophers.AssemblyInfoInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\DiningPhilophers\DiningPhilophers\obj\Debug\netcoreapp3.1\DiningPhilophers.AssemblyInfo.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\DiningPhilophers\DiningPhilophers\obj\Debug\netcoreapp3.1\DiningPhilophers.csproj.CoreCompileInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\DiningPhilophers\DiningPhilophers\obj\Debug\netcoreapp3.1\DiningPhilophers.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\DiningPhilophers\DiningPhilophers\obj\Debug\netcoreapp3.1\DiningPhilophers.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\DiningPhilophers\DiningPhilophers\obj\Debug\netcoreapp3.1\DiningPhilophers.genruntimeconfig.cache
