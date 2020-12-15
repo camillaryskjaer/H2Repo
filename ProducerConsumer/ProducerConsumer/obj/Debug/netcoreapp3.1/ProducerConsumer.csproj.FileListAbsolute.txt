@@ -1,0 +1,12 @@
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ProducerConsumer\ProducerConsumer\bin\Debug\netcoreapp3.1\ProducerConsumer.exe
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ProducerConsumer\ProducerConsumer\bin\Debug\netcoreapp3.1\ProducerConsumer.deps.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ProducerConsumer\ProducerConsumer\bin\Debug\netcoreapp3.1\ProducerConsumer.runtimeconfig.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ProducerConsumer\ProducerConsumer\bin\Debug\netcoreapp3.1\ProducerConsumer.runtimeconfig.dev.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ProducerConsumer\ProducerConsumer\bin\Debug\netcoreapp3.1\ProducerConsumer.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ProducerConsumer\ProducerConsumer\bin\Debug\netcoreapp3.1\ProducerConsumer.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ProducerConsumer\ProducerConsumer\obj\Debug\netcoreapp3.1\ProducerConsumer.AssemblyInfoInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ProducerConsumer\ProducerConsumer\obj\Debug\netcoreapp3.1\ProducerConsumer.AssemblyInfo.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ProducerConsumer\ProducerConsumer\obj\Debug\netcoreapp3.1\ProducerConsumer.csproj.CoreCompileInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ProducerConsumer\ProducerConsumer\obj\Debug\netcoreapp3.1\ProducerConsumer.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ProducerConsumer\ProducerConsumer\obj\Debug\netcoreapp3.1\ProducerConsumer.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\ProducerConsumer\ProducerConsumer\obj\Debug\netcoreapp3.1\ProducerConsumer.genruntimeconfig.cache
