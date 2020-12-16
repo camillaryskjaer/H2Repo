@@ -1,4 +1,5 @@
-﻿using BaggageSortingSystem.DataHandling;
+﻿using BaggageSortingSystem.DataConsumers;
+using BaggageSortingSystem.DataHandling;
 using BaggageSortingSystem.DataProducers;
 using System.Threading;
 

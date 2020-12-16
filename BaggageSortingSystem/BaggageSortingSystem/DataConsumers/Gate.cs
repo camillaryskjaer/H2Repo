@@ -1,11 +1,12 @@
 ﻿using BaggageSortingSystem.Data;
+using BaggageSortingSystem.DataHandling;
 using BaggageSortingSystem.DataProducers;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace BaggageSortingSystem.DataHandling
+namespace BaggageSortingSystem.DataConsumers
 {
     public class Gate
     {
@@ -80,14 +81,15 @@ namespace BaggageSortingSystem.DataHandling
                             // SynchronizationLockException
                             // object sync method was called from an unsynced block of code
                             Monitor.PulseAll(PlaneFactory.Instance);
+                            Monitor.Exit(PlaneFactory.Instance);
                         }
                         catch (Exception)
                         {
                         }
-                        Monitor.Exit(PlaneFactory.Instance);
                     }
                     // starts the timer and opens the gate
                     Console.WriteLine("new flight on gate " + _gateNumber);
+                    // exception can come on set interval
                     timer.Interval = _flight.GetWaitTime;
                     timer.Start();
                     GetStatus = true;

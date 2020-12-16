@@ -1,4 +1,5 @@
 ﻿using BaggageSortingSystem.Data;
+using BaggageSortingSystem.DataConsumers;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -33,8 +34,26 @@ namespace BaggageSortingSystem.DataHandling
                     Monitor.PulseAll(WaitingBaggage);
                     Monitor.Exit(WaitingBaggage);
                 }
-                // find the gate that has flightnumber
-                // if none cw to lost and found
+                // if gate with baggage flightnumber exists
+                if (Gates.Exists(x => x.GetFlightNumber() == baggage.GetFlightNumber))
+                {
+                    lock (Gates.Find(x => x.GetFlightNumber() == baggage.GetFlightNumber).WaitingBaggage)
+                    {
+                        if (Monitor.TryEnter(Gates.Find(x => x.GetFlightNumber() == baggage.GetFlightNumber).WaitingBaggage))
+                        {
+                            Gates.Find(x => x.GetFlightNumber() == baggage.GetFlightNumber).WaitingBaggage.Enqueue(baggage);
+                        }
+                        else
+                        {
+                            Monitor.Wait(Gates.Find(x => x.GetFlightNumber() == baggage.GetFlightNumber).WaitingBaggage);
+                            Gates.Find(x => x.GetFlightNumber() == baggage.GetFlightNumber).WaitingBaggage.Enqueue(baggage);
+                        }
+                    }
+                }
+                else
+                {
+                    // cw to lost and found
+                }
             }
         }
     }
