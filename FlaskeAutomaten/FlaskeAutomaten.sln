@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlaskeAutomaten", "FlaskeAutomaten\FlaskeAutomaten.csproj", "{A8D05B61-BD22-4A63-A12A-91FE62D4943E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8D05B61-BD22-4A63-A12A-91FE62D4943E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8D05B61-BD22-4A63-A12A-91FE62D4943E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8D05B61-BD22-4A63-A12A-91FE62D4943E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8D05B61-BD22-4A63-A12A-91FE62D4943E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E30DC0D0-BD56-44E5-8022-32D4F2D1B8A3}
+	EndGlobalSection
+EndGlobal
