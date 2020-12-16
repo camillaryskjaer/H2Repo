@@ -1,0 +1,13 @@
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\BaggageSortingSystem\BaggageSortingSystem\bin\Debug\netcoreapp3.1\BaggageSortingSystem.exe
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\BaggageSortingSystem\BaggageSortingSystem\bin\Debug\netcoreapp3.1\BaggageSortingSystem.deps.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\BaggageSortingSystem\BaggageSortingSystem\bin\Debug\netcoreapp3.1\BaggageSortingSystem.runtimeconfig.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\BaggageSortingSystem\BaggageSortingSystem\bin\Debug\netcoreapp3.1\BaggageSortingSystem.runtimeconfig.dev.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\BaggageSortingSystem\BaggageSortingSystem\bin\Debug\netcoreapp3.1\BaggageSortingSystem.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\BaggageSortingSystem\BaggageSortingSystem\bin\Debug\netcoreapp3.1\BaggageSortingSystem.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\BaggageSortingSystem\BaggageSortingSystem\obj\Debug\netcoreapp3.1\BaggageSortingSystem.csprojAssemblyReference.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\BaggageSortingSystem\BaggageSortingSystem\obj\Debug\netcoreapp3.1\BaggageSortingSystem.AssemblyInfoInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\BaggageSortingSystem\BaggageSortingSystem\obj\Debug\netcoreapp3.1\BaggageSortingSystem.AssemblyInfo.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\BaggageSortingSystem\BaggageSortingSystem\obj\Debug\netcoreapp3.1\BaggageSortingSystem.csproj.CoreCompileInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\BaggageSortingSystem\BaggageSortingSystem\obj\Debug\netcoreapp3.1\BaggageSortingSystem.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\BaggageSortingSystem\BaggageSortingSystem\obj\Debug\netcoreapp3.1\BaggageSortingSystem.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\BaggageSortingSystem\BaggageSortingSystem\obj\Debug\netcoreapp3.1\BaggageSortingSystem.genruntimeconfig.cache
