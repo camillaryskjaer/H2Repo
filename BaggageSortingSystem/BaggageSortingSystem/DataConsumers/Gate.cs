@@ -42,7 +42,11 @@ namespace BaggageSortingSystem.DataConsumers
                     // get baggage?
                     while (GetStatus)
                     {
-
+                        if (WaitingBaggage.Count != 0)
+                        {
+                            Baggage baggage = WaitingBaggage.Dequeue();
+                            Console.WriteLine(baggage.GetBaggageNumber + " made it to flight " + baggage.GetFlightNumber);
+                        }
                     }
 
                 }
@@ -113,6 +117,11 @@ namespace BaggageSortingSystem.DataConsumers
         public int GetFlightNumber()
         {
             return _flight.GetFlightNumber;
+        }
+
+        public int GetGateNumber()
+        {
+            return _gateNumber;
         }
     }
 }

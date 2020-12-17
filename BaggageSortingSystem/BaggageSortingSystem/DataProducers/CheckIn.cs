@@ -101,8 +101,7 @@ namespace BaggageSortingSystem.DataProducers
                         }
                         baggage = null;
                         Monitor.PulseAll(BaggageSorter.WaitingBaggage);
-                        Thread.Sleep(50);
-                        Monitor.Wait(BaggageSorter.WaitingBaggage);
+                                                Monitor.Wait(BaggageSorter.WaitingBaggage);
                     }
                 }
             }
