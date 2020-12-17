@@ -6,13 +6,11 @@ namespace BaggageSortingSystem.Data
 {
     public class Flight
     {
-        private int _maxPassengers;
         private int _flightNumber;
         private int _waitTime;
 
-        public Flight(int maxpassengers, int flightnumber, int waittime)
+        public Flight(int flightnumber, int waittime)
         {
-            _maxPassengers = maxpassengers;
             _flightNumber = flightnumber;
             _waitTime = waittime;
         }
@@ -26,13 +24,5 @@ namespace BaggageSortingSystem.Data
         {
             get { return _flightNumber; }
         }
-
-        public int CurrentPassengers { get; set; }
-
-        public int GetMaxPassengers
-        {
-            get { return _maxPassengers; }
-        }
-
     }
 }
