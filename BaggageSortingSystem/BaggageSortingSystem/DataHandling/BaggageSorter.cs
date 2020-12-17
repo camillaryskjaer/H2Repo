@@ -73,8 +73,8 @@ namespace BaggageSortingSystem.DataHandling
                                 try
                                 {
                                     // object red not set to instance of object // null ref
-                                    Monitor.PulseAll(Gates.Find(x => x.GetFlightNumber() == baggage.GetFlightNumber).WaitingBaggage);
-                                    Monitor.Exit(Gates.Find(x => x.GetFlightNumber() == baggage.GetFlightNumber).WaitingBaggage);
+                                    //Monitor.PulseAll(Gates.Find(x => x.GetFlightNumber() == baggage.GetFlightNumber).WaitingBaggage);
+                                    //Monitor.Exit(Gates.Find(x => x.GetFlightNumber() == baggage.GetFlightNumber).WaitingBaggage);
                                 }
                                 catch (Exception)
                                 {
