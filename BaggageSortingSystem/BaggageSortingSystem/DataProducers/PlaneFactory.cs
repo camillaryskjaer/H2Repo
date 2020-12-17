@@ -28,7 +28,7 @@ namespace BaggageSortingSystem.DataProducers
 
         public Flight NewFlight()
         {
-            Flight flight = new Flight(random.Next(50, 201), _flightNumber, random.Next(1000, 10001));
+            Flight flight = new Flight(random.Next(50, 201), _flightNumber, random.Next(5000, 10001));
             _flightNumber++;
             return flight;
         }
