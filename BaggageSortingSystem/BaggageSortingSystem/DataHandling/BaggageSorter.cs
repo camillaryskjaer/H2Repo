@@ -34,11 +34,8 @@ namespace BaggageSortingSystem.DataHandling
                             baggage = WaitingBaggage.Dequeue();
                         }
                     }
-                    // unsync code block
                     Monitor.PulseAll(WaitingBaggage);
                     Monitor.Wait(WaitingBaggage);
-                    // becomes too slow
-                    // Monitor.Exit(WaitingBaggage);
                 }
                 // if there was any baggage
                 if (baggage != null)
@@ -70,15 +67,6 @@ namespace BaggageSortingSystem.DataHandling
                                     Gates.Find(x => x.GetFlightNumber() == baggage.GetFlightNumber).WaitingBaggage.Enqueue(baggage);
                                     Console.WriteLine("Sorter passed baggage " + baggage.GetBaggageNumber + " to gate " + Gates.Find(x => x.GetFlightNumber() == baggage.GetFlightNumber).GetGateNumber());
                                 }
-                                try
-                                {
-                                    // object red not set to instance of object // null ref
-                                    //Monitor.PulseAll(Gates.Find(x => x.GetFlightNumber() == baggage.GetFlightNumber).WaitingBaggage);
-                                    //Monitor.Exit(Gates.Find(x => x.GetFlightNumber() == baggage.GetFlightNumber).WaitingBaggage);
-                                }
-                                catch (Exception)
-                                {
-                                }
                             }
                             catch (Exception)
                             {
@@ -94,7 +82,6 @@ namespace BaggageSortingSystem.DataHandling
                     {
                         Console.WriteLine(baggage.GetBaggageNumber + " for flight " + baggage.GetFlightNumber + " was sent to lost and found");
                         baggage = null;
-                        // cw to lost and found
                     }
                 }
             }
