@@ -49,7 +49,7 @@ namespace BaggageSortingSystem.DataProducers
                             {
                                 // waits to get the lock on gates
                                 Monitor.Wait(BaggageSorter.Gates);
-                               
+
                                 // if there is a gate produce baggage
                                 if (BaggageSorter.Gates.Count != 0)
                                 {
@@ -65,7 +65,7 @@ namespace BaggageSortingSystem.DataProducers
                     {
                         // waits to get the lock on baggagesorter
                         Monitor.Wait(BaggageSorter._lock);
-                       
+
                         // locks to gates
                         lock (BaggageSorter.Gates)
                         {
@@ -93,14 +93,14 @@ namespace BaggageSortingSystem.DataProducers
                             }
                             // tells all waiting threads this one is done
                             Monitor.PulseAll(BaggageSorter.Gates);
-                            
+
                             // release the lock
                             Monitor.Exit(BaggageSorter.Gates);
                         }
                     }
                     // tells all waiting thread this one is done
                     Monitor.PulseAll(BaggageSorter._lock);
-                    
+
                     // release the lock
                     Monitor.Exit(BaggageSorter._lock);
                 }
@@ -137,7 +137,7 @@ namespace BaggageSortingSystem.DataProducers
 
                         // tells other thread this one is done
                         Monitor.PulseAll(BaggageSorter.WaitingBaggage);
-                        
+
                         // release the lock on baggage and waits for it to be free again
                         Monitor.Wait(BaggageSorter.WaitingBaggage);
                     }
