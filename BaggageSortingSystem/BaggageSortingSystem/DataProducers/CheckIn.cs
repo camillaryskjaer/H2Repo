@@ -11,11 +11,13 @@ namespace BaggageSortingSystem.DataProducers
     public class CheckIn
     {
         private int _number;
+        public bool Alive { get; set; }
 
         // constructor that requires a number
         public CheckIn(int number)
         {
             _number = number;
+            Alive = true;
         }
 
         // method to generate baggage
@@ -24,8 +26,9 @@ namespace BaggageSortingSystem.DataProducers
             Random random = new Random();
             Baggage baggage = null;
             // thread method
-            while (true)
+            while (Alive)
             {
+                Thread.Sleep(500);
                 // locks to the bagagge sorter
                 lock (BaggageSorter._lock)
                 {
@@ -109,6 +112,7 @@ namespace BaggageSortingSystem.DataProducers
                 if (baggage != null)
                 {
                     // locks to baggage
+                    // dead lock on manual
                     lock (BaggageSorter.WaitingBaggage)
                     {
                         // if there is less then 200 pieces of baggage
@@ -143,6 +147,12 @@ namespace BaggageSortingSystem.DataProducers
                     }
                 }
             }
+        }
+
+        // returns checkin number
+        public int GetCheckInNumber()
+        {
+            return _number;
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using BaggageSortingSystem.DataConsumers;
 using BaggageSortingSystem.DataHandling;
 using BaggageSortingSystem.DataProducers;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 
@@ -9,11 +10,22 @@ namespace BaggageSortingSystem
     class Program
     {
         // testing purpose
-        public static List<Thread> checkIns = new List<Thread>();
-        public static List<Thread> gates = new List<Thread>();
+        public static List<CheckIn> checkIns = new List<CheckIn>();
+        public static List<Gate> gates = new List<Gate>();
         //
+
+        // to keep the console alive
+        // to keep the console alive
+        static ManualResetEvent _quitEvent = new ManualResetEvent(false);
         static void Main(string[] args)
         {
+            // would like this explained
+            Console.CancelKeyPress += (sender, eArgs) =>
+            {
+                _quitEvent.Set();
+                eArgs.Cancel = true;
+            };
+
             // thread on keys open close gates
             // no auto
             // open close gates and check ins
@@ -28,7 +40,7 @@ namespace BaggageSortingSystem
             //
 
             //// creates i checkins for the system
-            //for (int i = 1; i < 11; i++)
+            //for (int i = 1; i < 5; i++)
             //{
             //    // creates new checkin with number i
             //    CheckIn checkIn = new CheckIn(i);
@@ -41,7 +53,7 @@ namespace BaggageSortingSystem
             //    Thread.Sleep(10);
             //}
             //// creates i gates for the system
-            //for (int i = 1; i < 11; i++)
+            //for (int i = 1; i < 5; i++)
             //{
             //    // creates new gate with number i
             //    Gate gate = new Gate(i);
@@ -54,10 +66,8 @@ namespace BaggageSortingSystem
             //    Thread.Sleep(10);
             //}
 
-            while (true)
-            {
-
-            }
+            // blocks the thread
+            _quitEvent.WaitOne();
         }
     }
 }

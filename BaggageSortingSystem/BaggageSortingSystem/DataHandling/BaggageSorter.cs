@@ -45,7 +45,7 @@ namespace BaggageSortingSystem.DataHandling
                     // tell other threads this one is done
                     Monitor.PulseAll(WaitingBaggage);
 
-                    // exits baggage lock
+                    // release the lock and waits for it to be free again
                     Monitor.Wait(WaitingBaggage);
                 }
                 // if there was any baggage

@@ -15,13 +15,14 @@ namespace BaggageSortingSystem.DataConsumers
         public Queue<Baggage> WaitingBaggage = new Queue<Baggage>(50);
         private System.Timers.Timer timer = new System.Timers.Timer();
         private int _gateNumber;
+        public bool Alive { get; set; }
 
         // method to handle baggage to the gate.
         public void FillFlight()
         {
             timer.Elapsed += Timer_Elapsed;
             // thread method
-            while (true)
+            while (Alive)
             {
                 // if gate is open add to baggagesorters list of open gates
                 if (GetStatus)
@@ -100,12 +101,14 @@ namespace BaggageSortingSystem.DataConsumers
                     GetStatus = true;
                 }
             }
+            BaggageSorter.Gates.Remove(this);
         }
 
         // returns the gatenumber
         public Gate(int gatenumber)
         {
             _gateNumber = gatenumber;
+            Alive = true;
         }
 
         // timer elapsed evetn

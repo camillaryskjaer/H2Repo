@@ -23,15 +23,14 @@ namespace BaggageSortingSystem.DataHandling
                     {
                         CheckIn checkIn = new CheckIn(int.Parse(charInput[2].ToString()));
                         Thread t = new Thread(() => checkIn.Produce());
-                        t.Name = charInput[2].ToString();
-                        Program.checkIns.Add(t);
+                        Program.checkIns.Add(checkIn);
                         t.Start();
                     }
                     else if (charInput[1] == 'g')
                     {
                         Gate gate = new Gate(int.Parse(charInput[2].ToString()));
                         Thread t = new Thread(() => gate.FillFlight());
-                        Program.gates.Add(t);
+                        Program.gates.Add(gate);
                         t.Start();
                     }
                 }
@@ -39,9 +38,15 @@ namespace BaggageSortingSystem.DataHandling
                 {
                     if (charInput[1] == 'c')
                     {
-                        Thread t = Program.checkIns.Find(x => x.Name == charInput[2].ToString());
-                        Program.checkIns.Remove(t);
-                        t.Abort();
+                        CheckIn c = Program.checkIns.Find(x => x.GetCheckInNumber() == int.Parse(charInput[2].ToString()));
+                        Program.checkIns.Remove(c);
+                        c.Alive = false;
+                    }
+                    else if (charInput[1] == 'g')
+                    {
+                        Gate g = Program.gates.Find(x => x.GetGateNumber() == int.Parse(charInput[2].ToString()));
+                        Program.gates.Remove(g);
+                        g.Alive = false;
                     }
                 }
             }
