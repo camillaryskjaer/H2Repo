@@ -8,6 +8,7 @@ using System.Threading;
 
 namespace BaggageSortingSystem.DataConsumers
 {
+    // class to simulate a gate in the airport
     public class Gate
     {
         private Flight _flight;
@@ -15,7 +16,7 @@ namespace BaggageSortingSystem.DataConsumers
         private System.Timers.Timer timer = new System.Timers.Timer();
         private int _gateNumber;
 
-
+        // method to handle baggage to the gate.
         public void FillFlight()
         {
             timer.Elapsed += Timer_Elapsed;
@@ -39,7 +40,7 @@ namespace BaggageSortingSystem.DataConsumers
                         Monitor.PulseAll(BaggageSorter.Gates);
                         Monitor.Exit(BaggageSorter.Gates);
                     }
-                    // get baggage?
+                    // while the gate is open, get baggage to th plane
                     while (GetStatus)
                     {
                         if (WaitingBaggage.Count != 0)
@@ -101,24 +102,30 @@ namespace BaggageSortingSystem.DataConsumers
             }
         }
 
+        // returns the gatenumber
         public Gate(int gatenumber)
         {
             _gateNumber = gatenumber;
         }
 
+        // timer elapsed evetn
         private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
+            // closes the gate
             GetStatus = false;
             timer.Stop();
         }
 
+        // returns the status of the gate open/closed
         public bool GetStatus { get; private set; }
 
+        // returns the current flights number
         public int GetFlightNumber()
         {
             return _flight.GetFlightNumber;
         }
 
+        // returns the gate number
         public int GetGateNumber()
         {
             return _gateNumber;

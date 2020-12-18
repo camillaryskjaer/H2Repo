@@ -9,6 +9,10 @@ namespace BaggageSortingSystem
     {
         static void Main(string[] args)
         {
+            // thread on keys open close gates
+            // no auto
+            // open close gates and check ins
+
             Thread t = new Thread(() => BaggageSorter.SortBaggage());
             t.Start();
 
