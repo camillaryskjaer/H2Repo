@@ -9,6 +9,10 @@ namespace BaggageSortingSystem
 {
     class Program
     {
+        /*Tror min lås på checkins kan løses ved at omskrive hele metoden.
+        er ikke helt sikker på hvórfor den gør det, men kan være pga lock
+         */
+
         // testing purpose
         public static List<CheckIn> checkIns = new List<CheckIn>();
         public static List<Gate> gates = new List<Gate>();
