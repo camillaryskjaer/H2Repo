@@ -9,16 +9,10 @@ namespace BaggageSortingSystem
 {
     class Program
     {
-        /*Tror min lås på checkins kan løses ved at omskrive hele metoden.
-        er ikke helt sikker på hvórfor den gør det, men kan være pga lock
-         */
-
-        // testing purpose
+        // lists for manual
         public static List<CheckIn> checkIns = new List<CheckIn>();
         public static List<Gate> gates = new List<Gate>();
-        //
 
-        // to keep the console alive
         // to keep the console alive
         static ManualResetEvent _quitEvent = new ManualResetEvent(false);
         static void Main(string[] args)
@@ -30,45 +24,39 @@ namespace BaggageSortingSystem
                 eArgs.Cancel = true;
             };
 
-            // thread on keys open close gates
-            // no auto
-            // open close gates and check ins
-
-
             Thread t = new Thread(() => BaggageSorter.SortBaggage());
             t.Start();
 
-            // testing purpose
+            // thread for keyinput
             t = new Thread(() => new KeyboardListener().Listen());
             t.Start();
-            //
-
-            //// creates i checkins for the system
-            //for (int i = 1; i < 5; i++)
-            //{
-            //    // creates new checkin with number i
-            //    CheckIn checkIn = new CheckIn(i);
-            //    // creates new thread from checkin.produce
-            //    t = new Thread(() => checkIn.Produce());
-            //    // starts thread
-            //    t.Start();
-            //    // sleeps to avoid multiple threads being called the same
-            //    // yes have tried that
-            //    Thread.Sleep(10);
-            //}
-            //// creates i gates for the system
-            //for (int i = 1; i < 5; i++)
-            //{
-            //    // creates new gate with number i
-            //    Gate gate = new Gate(i);
-            //    // creates new thread from gate.fillflight
-            //    t = new Thread(() => gate.FillFlight());
-            //    // starts thread
-            //    t.Start();
-            //    // sleps to avoid multiple threads being called the same
-            //    // yes have tried that
-            //    Thread.Sleep(10);
-            //}
+            
+            // creates i checkins for the system
+            for (int i = 1; i < 5; i++)
+            {
+                // creates new checkin with number i
+                CheckIn checkIn = new CheckIn(i);
+                // creates new thread from checkin.produce
+                t = new Thread(() => checkIn.Produce());
+                // starts thread
+                t.Start();
+                // sleeps to avoid multiple threads being called the same
+                // yes have tried that
+                Thread.Sleep(10);
+            }
+            // creates i gates for the system
+            for (int i = 1; i < 5; i++)
+            {
+                // creates new gate with number i
+                Gate gate = new Gate(i);
+                // creates new thread from gate.fillflight
+                t = new Thread(() => gate.FillFlight());
+                // starts thread
+                t.Start();
+                // sleps to avoid multiple threads being called the same
+                // yes have tried that
+                Thread.Sleep(10);
+            }
 
             // blocks the thread
             _quitEvent.WaitOne();

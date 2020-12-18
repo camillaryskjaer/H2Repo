@@ -142,8 +142,8 @@ namespace BaggageSortingSystem.DataProducers
                         // tells other thread this one is done
                         Monitor.PulseAll(BaggageSorter.WaitingBaggage);
 
-                        // release the lock on baggage and waits for it to be free again
-                        Monitor.Wait(BaggageSorter.WaitingBaggage);
+                        // exits lock
+                        Monitor.Exit(BaggageSorter.WaitingBaggage);
                     }
                 }
             }
