@@ -9,11 +9,21 @@ namespace Coincidences
     {
         static void Main(string[] args)
         {
+            string encrypted = EncryptSub(Console.ReadLine().ToLower());
+            Console.WriteLine("encrypted string");
+            Console.WriteLine(encrypted);
+            Console.WriteLine("decrypted string");
+            Console.WriteLine(DecryptSub(encrypted));
+
+            Console.ReadLine();
+        }
+
+        public static string EncryptSub(string input)
+        {
             char[] alphabet = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'
                 , 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'æ', 'ø', 'å' };
-            StringBuilder stringBuilder = new StringBuilder();
-            string input = Console.ReadLine().ToLower();
 
+            StringBuilder stringBuilder = new StringBuilder();
             foreach (char c in input)
             {
                 int index = Array.FindIndex(alphabet, i => i.Equals(c));
@@ -27,12 +37,16 @@ namespace Coincidences
                     stringBuilder.Append(alphabet[index + 1]);
                 }
             }
+            return stringBuilder.ToString();
+        }
 
-            string encrypted = stringBuilder.ToString();
-            Console.WriteLine(encrypted);
-            Console.ReadLine();
+        public static string DecryptSub(string encrypted)
+        {
+            char[] alphabet = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'
+                , 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'æ', 'ø', 'å' };
 
-            stringBuilder.Clear();
+            StringBuilder stringBuilder = new StringBuilder();
+
             foreach (char c in encrypted)
             {
                 int index = Array.FindIndex(alphabet, i => i.Equals(c));
@@ -45,8 +59,8 @@ namespace Coincidences
                     stringBuilder.Append(alphabet[index - 1]);
                 }
             }
-            Console.WriteLine(stringBuilder.ToString());
-            Console.ReadLine();
+
+            return stringBuilder.ToString();
         }
 
         public static void RNGNumbers()
