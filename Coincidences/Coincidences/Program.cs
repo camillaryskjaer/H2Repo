@@ -9,11 +9,13 @@ namespace Coincidences
     {
         static void Main(string[] args)
         {
-            string encrypted = EncryptSub(Console.ReadLine().ToLower());
-            Console.WriteLine("encrypted string");
-            Console.WriteLine(encrypted);
-            Console.WriteLine("decrypted string");
-            Console.WriteLine(DecryptSub(encrypted));
+            //string encrypted = EncryptSub(Console.ReadLine().ToLower());
+            //Console.WriteLine("encrypted string");
+            //Console.WriteLine(encrypted);
+            //Console.WriteLine("decrypted string");
+            //Console.WriteLine(DecryptSub(encrypted));
+
+            RNGNumbers();
 
             Console.ReadLine();
         }
