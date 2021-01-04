@@ -29,6 +29,7 @@ namespace Hasher
                     stopwatch.Stop();
                     Console.WriteLine("Plain text: " + input);
                     Console.WriteLine("Hashed: " + Encoding.ASCII.GetString(hashed));
+                    Console.WriteLine("HEX: " + BitConverter.ToString(hashed));
                     Console.WriteLine("Milliseconds taken: " + stopwatch.ElapsedMilliseconds);
                     break;
                 case 2:
@@ -41,6 +42,7 @@ namespace Hasher
                     stopwatch.Stop();
                     Console.WriteLine("Plain text: " + input);
                     Console.WriteLine("Hashed: " + Encoding.ASCII.GetString(hmacSha1));
+                    Console.WriteLine("HEX: " + BitConverter.ToString(hmacSha1));
                     Console.WriteLine("Key: " + Encoding.ASCII.GetString(hmacSha1Key));
                     Console.WriteLine("Milliseconds taken: " + stopwatch.ElapsedMilliseconds);
                     break;
@@ -51,6 +53,7 @@ namespace Hasher
                     stopwatch.Stop();
                     Console.WriteLine("Plain text: " + input);
                     Console.WriteLine("Hashed: " + Encoding.ASCII.GetString(sha2));
+                    Console.WriteLine("HEX: " + BitConverter.ToString(sha2));
                     Console.WriteLine("Milliseconds taken: " + stopwatch.ElapsedMilliseconds);
                     break;
                 case 4:
@@ -63,6 +66,7 @@ namespace Hasher
                     stopwatch.Stop();
                     Console.WriteLine("Plain text: " + input);
                     Console.WriteLine("Hashed: " + Encoding.ASCII.GetString(hmacsha2));
+                    Console.WriteLine("HEX: " + BitConverter.ToString(hmacsha2));
                     Console.WriteLine("Key: " + Encoding.ASCII.GetString(hmac2key));
                     Console.WriteLine("Milliseconds taken: " + stopwatch.ElapsedMilliseconds);
                     break;
@@ -73,6 +77,7 @@ namespace Hasher
                     stopwatch.Stop();
                     Console.WriteLine("Plain text: " + input);
                     Console.WriteLine("Hashed: " + Encoding.ASCII.GetString(sha3));
+                    Console.WriteLine("HEX: " + BitConverter.ToString(sha3));
                     Console.WriteLine("Milliseconds taken: " + stopwatch.ElapsedMilliseconds);
                     break;
                 case 6:
@@ -82,6 +87,7 @@ namespace Hasher
                     stopwatch.Stop();
                     Console.WriteLine("Plain text: " + input);
                     Console.WriteLine("Hashed: " + Encoding.ASCII.GetString(sha5));
+                    Console.WriteLine("HEX: " + BitConverter.ToString(sha5));
                     Console.WriteLine("Milliseconds taken: " + stopwatch.ElapsedMilliseconds);
                     break;
                 case 7:
@@ -91,6 +97,7 @@ namespace Hasher
                     stopwatch.Stop();
                     Console.WriteLine("Plain text: " + input);
                     Console.WriteLine("Hashed: " + Encoding.ASCII.GetString(md5));
+                    Console.WriteLine("HEX: " + BitConverter.ToString(md5));
                     Console.WriteLine("Milliseconds taken: " + stopwatch.ElapsedMilliseconds);
                     break;
             }
