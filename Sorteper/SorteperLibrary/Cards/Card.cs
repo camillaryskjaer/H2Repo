@@ -22,6 +22,8 @@ namespace SorteperLibrary
             _value = value;
         }
 
+        // Method to get the name of the card
+        // Currently a placeholder
         public string GetName()
         {
             return _name;

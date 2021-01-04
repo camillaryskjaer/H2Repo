@@ -10,12 +10,17 @@ namespace SorteperLibrary
 {
     public class GameManager
     {
+        // Generates a list of cards
         List<ICard> cards = new CardGenerator().GenerateCards();
 
+        // Empty list for players
         List<IPlayer> players = new List<IPlayer>();
         Random random = new Random();
+
+        // Handling of turn
         int currentPlayer = 0;
 
+        // Method to end the turn
         public void EndTurn()
         {
             if (currentPlayer == players.Count - 1)
@@ -28,6 +33,7 @@ namespace SorteperLibrary
             }
         }
 
+        // Method to check for victory // 0 cards on players
         public void CheckVictory()
         {
             List<IPlayer> tempPlayers = new List<IPlayer>(players);
@@ -41,9 +47,13 @@ namespace SorteperLibrary
             players = tempPlayers;
         }
 
+        // Method to match all cards
         public void PlayerMatchCards()
         {
+            // gets the cards of the player
             cards = players[currentPlayer].GetCards();
+
+            // copies the cards to a temp list
             List<ICard> tempCards = new List<ICard>(cards);
             // edits the count and crashes
             foreach (ICard card in cards)
@@ -51,12 +61,14 @@ namespace SorteperLibrary
                 var x = cards.FindAll(c => c.GetSuit() == card.GetSuit() && c.GetValue() == card.GetValue());
                 if (x.Count == 2)
                 {
+                    // removes matches from temp list
                     foreach (ICard matchingCard in x)
                     {
                         tempCards.Remove(matchingCard);
                     }
                 }
             }
+            // sets the temp list to active list
             players[currentPlayer].AddCards(tempCards);
         }
 
