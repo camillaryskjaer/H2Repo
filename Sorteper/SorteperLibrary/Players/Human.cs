@@ -60,5 +60,10 @@ namespace SorteperLibrary.Players
             _cards.RemoveAt(index);
             return result;
         }
+
+        public void RemoveCard(ICard card)
+        {
+            _cards.Remove(card);
+        }
     }
 }

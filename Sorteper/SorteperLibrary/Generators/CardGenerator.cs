@@ -16,6 +16,12 @@ namespace SorteperLibrary.Generators
         public List<ICard> GenerateCards()
         {
             // needs to generate 51 cards. 13 for each suit, tho not 11 for suit clubs
+            // needs to handle name of generated cards instead of empty string
+
+            // ex. list for value = name?
+
+            // suit = color and value = value
+            // 1 = red 2 = black
             for (int i = 1; i < 5; i++)
             {
                 switch (i)
@@ -23,32 +29,36 @@ namespace SorteperLibrary.Generators
                     case 1:
                         for (int s = 1; s < 14; s++)
                         {
-                            ICard card = new Card("Hearts", s);
+                            // hearts
+                            ICard card = new Card(1, s, "");
                             _cards.Add(card);
                         }
                         break;
                     case 2:
                         for (int s = 1; s < 14; s++)
                         {
-                            ICard card = new Card("Diamonds", s);
+                            // diamonds
+                            ICard card = new Card(1, s, "");
                             _cards.Add(card);
                         }
                         break;
                     case 3:
                         for (int s = 1; s < 14; s++)
                         {
-                            ICard card = new Card("Clubs", s);
+                            // clubs
+                            ICard card = new Card(2, s, "");
                             _cards.Add(card);
                         }
                         break;
                     case 4:
                         for (int s = 1; s < 14; s++)
                         {
+                            // spades
                             if (s == 11)
                             {
                                 continue;
                             }
-                            ICard card = new Card("Spades", s);
+                            ICard card = new Card(2, s, "");
                             _cards.Add(card);
                         }
                         break;

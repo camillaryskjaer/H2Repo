@@ -17,5 +17,6 @@ namespace SorteperLibrary.Players.Interfaces
         void AddCard(ICard card);
         void AddCards(List<ICard> cards);
         ICard RemoveCard(int index);
+        void RemoveCard(ICard card);
     }
 }

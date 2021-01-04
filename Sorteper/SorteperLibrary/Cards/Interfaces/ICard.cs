@@ -9,7 +9,8 @@ namespace SorteperLibrary.Cards.Interfaces
     /// </summary>
     public interface ICard
     {
-        string GetSuit();
+        string GetName();
+        int GetSuit();
         int GetValue();
     }
 }

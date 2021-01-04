@@ -51,5 +51,9 @@ namespace SorteperLibrary.Players
         {
             throw new NotImplementedException();
         }
+        public void RemoveCard(ICard card)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

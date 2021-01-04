@@ -16,16 +16,49 @@ namespace ConsoleUI
         {
             GameManager manager = new GameManager();
 
+            // create players
             Console.WriteLine("Enter number of players");
-            for (int i = 0; i < int.Parse(Console.ReadLine()); i++)
+            int playerCount = int.Parse(Console.ReadLine());
+            for (int i = 0; i < playerCount; i++)
             {
                 Console.Clear();
                 Console.WriteLine("Write name of player");
                 manager.CreatePlayer(Console.ReadLine());
             }
+            Console.WriteLine("Press enter to begin");
+            Console.ReadLine();
+            Console.Clear();
+
             manager.DealCards();
 
+            while (manager.ActivePlayers() > 1)
+            {
+                // tells which players turn it is
+                Console.WriteLine(manager.GetPlayerName() + "'s turn");
 
+                // get card options
+                int[] cardOptions = manager.PlayerSelectCard();
+                Console.WriteLine("Select a card from {0} to {1}", cardOptions[0], cardOptions[1]);
+
+                // write card taken
+                Console.WriteLine(manager.PlayerTakeCard(int.Parse(Console.ReadLine())));
+
+                // match cards
+                manager.PlayerMatchCards();
+                Console.WriteLine("All cards have been matched");
+
+                manager.CheckVictory();
+
+                // end turn
+                if (manager.ActivePlayers() > 1)
+                {
+                    manager.EndTurn();
+                    Console.WriteLine("Press enter to end turn");
+                    Console.Clear();
+                }
+            }
+
+            Console.WriteLine(manager.GetPlayerName() + " is the knave");
 
             Console.ReadLine();
         }
