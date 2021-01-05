@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Vigenere\\Vigenere\\Vigenere.csproj": {}
+    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Vigenere\\Vigenere\\Vigenere.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Vigenere\\Vigenere\\Vigenere.csproj": {
+    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Vigenere\\Vigenere\\Vigenere.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Vigenere\\Vigenere\\Vigenere.csproj",
+        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Vigenere\\Vigenere\\Vigenere.csproj",
         "projectName": "Vigenere",
-        "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Vigenere\\Vigenere\\Vigenere.csproj",
+        "projectPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Vigenere\\Vigenere\\Vigenere.csproj",
         "packagesPath": "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Vigenere\\Vigenere\\obj\\",
+        "outputPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Vigenere\\Vigenere\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
