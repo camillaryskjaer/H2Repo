@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Hasher\\Hasher\\Hasher.csproj": {}
+    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\HashedLogin\\HashedLogin\\HashedLogin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Hasher\\Hasher\\Hasher.csproj": {
+    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\HashedLogin\\HashedLogin\\HashedLogin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Hasher\\Hasher\\Hasher.csproj",
-        "projectName": "Hasher",
-        "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Hasher\\Hasher\\Hasher.csproj",
+        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\HashedLogin\\HashedLogin\\HashedLogin.csproj",
+        "projectName": "HashedLogin",
+        "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\HashedLogin\\HashedLogin\\HashedLogin.csproj",
         "packagesPath": "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Hasher\\Hasher\\obj\\",
+        "outputPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\HashedLogin\\HashedLogin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
