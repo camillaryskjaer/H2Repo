@@ -4,6 +4,7 @@ using System.Text;
 
 namespace MyBanker
 {
+    Hvorfor placerer du dette i sin egen klasse?
     class CardNumberGenerator
     {
         // random number generator
